@@ -1,0 +1,85 @@
+###########
+# COMMON ##
+###########
+
+$(addprefix update_rvx_submodule., $(RVX_SUBMODULE_PRIVATE_LIST) $(RVX_SUBMODULE_PUBLIC_LIST))::update_rvx_submodule.%:
+	cd ./$(*) && rm -rf *
+	cd ./$(*) && git checkout *
+	cd ./$(*) && git pull origin master
+
+update_rvx_submodule.rvx_synthesizer_obfuscated::
+	cd ./rvx_synthesizer_obfuscated && git lfs pull
+
+error_rvx_init:
+	$(error "rvx_init is NOT allowed in RVX_SUBMODULE_PRIVATE_LIST or RVX_SUBMODULE_PUBLIC_LIST")
+  
+update_rvx_submodule.rvx_init:: error_rvx_init
+
+###########
+# PRIVATE #
+###########
+
+init_rvx_submodule_private: $(addprefix init_rvx_submodule_private., $(RVX_SUBMODULE_PRIVATE_LIST))
+                                                                                                                                     
+$(addprefix init_rvx_submodule_private., $(RVX_SUBMODULE_PRIVATE_LIST)):init_rvx_submodule_private.%:
+	rm -rf ./$(*)
+	-git submodule deinit -f $(*)
+	-rm -rf .git/modules/$(*)
+	-git rm -rf ./$(*)
+	git submodule add -f git@bitbucket.org:kyuseung_han/$(*).git
+	cd ./$(*) && git pull origin master
+
+update_rvx_submodule_private: $(addprefix update_rvx_submodule., $(RVX_SUBMODULE_PRIVATE_LIST))
+
+init_rvx_submodule_private.rvx_init: error_rvx_init
+
+#########
+# HWLIB #
+#########
+
+init_rvx_hwlib_basic:
+	rm -rf ./hwlib_basic
+	-git submodule deinit -f hwlib_basic
+	-rm -rf .git/modules/rvx_hwlib
+	-git rm -rf ./hwlib_basic
+	git submodule add -f git@bitbucket.org:kyuseung_han/rvx_hwlib.git ./hwlib_basic
+	cd ./hwlib_basic && git pull origin master
+
+##########
+# PUBLIC #
+##########
+
+init_rvx_submodule_public: $(addprefix init_rvx_submodule_public., $(RVX_SUBMODULE_PUBLIC_LIST))
+                                                                                                                                     
+$(addprefix init_rvx_submodule_public., $(RVX_SUBMODULE_PUBLIC_LIST)):init_rvx_submodule_public.%:
+	rm -rf ./$(*)
+	-git submodule deinit -f $(*)
+	-rm -rf .git/modules/$(*)
+	-git rm -rf ./$(*)
+	git submodule add -f https://github.com/rvx-etri/$(*).git
+	cd ./$(*) && git pull origin master
+
+update_rvx_submodule_public: $(addprefix update_rvx_submodule., $(RVX_SUBMODULE_PUBLIC_LIST))
+
+init_rvx_submodule_public.rvx_init: error_rvx_init
+
+##########
+# UPDATE #
+##########
+
+update_rvx_hwlib_basic:
+	cd ./hwlib_basic && rm -rf *
+	cd ./hwlib_basic && git checkout *
+	cd ./hwlib_basic && git pull origin master
+
+##########
+# RETIRE #
+##########
+
+retire_rvx_submodule:
+	-@git submodule deinit -f $(RVX_SUBMODULE)
+	-@rm -rf .git/modules/$(RVX_SUBMODULE)
+	-@git rm -rf ./$(RVX_SUBMODULE)
+	-@git config -f .gitmodules --remove-section submodule.$(RVX_SUBMODULE)
+	-@rm -rf ./$(RVX_SUBMODULE)
+
