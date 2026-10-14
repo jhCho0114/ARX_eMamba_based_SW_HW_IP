@@ -1,11 +1,12 @@
 # ARX_eMamba_based_SW_HW_IP
 
-eMamba (Mamba SSM 기반 경량 모델) 의 SW / HW IP 를 담은 저장소입니다. 두 프로젝트가 들어 있습니다.
+eMamba (Mamba SSM 기반 경량 모델) 의 SW / HW IP 를 담은 저장소입니다. 두 프로젝트 (eMamba IP 플랫폼, eMamba-YOLO) 가 들어 있습니다.
 
 | 폴더 | 내용 | 상태 |
 |---|---|---|
 | [`ARX_eMamba_WB/`](ARX_eMamba_WB) | RISC-V eXpress (RVX) 작업공간. eMamba IP 를 AXI 슬레이브로 붙인 SoC 플랫폼 `eMamba_BRAM_WB` (Edge-19p 보드) 와 참조용 플랫폼들 | 보드용 플랫폼 |
 | [`ARX_eMambaYOLO_RTL__under-developing/`](ARX_eMambaYOLO_RTL__under-developing) | eMamba SSM 코어를 쓰는 Mamba-YOLO-T INT8 검출 모델의 RTL (layer 0–20) | 개발 중: functional simulation 까지 |
+| [`ARX_eMambaYOLO_RTL__training/`](ARX_eMambaYOLO_RTL__training) | 위 RTL 의 기준 모델을 만든 학습 코드와 모델 (Mamba-YOLO 레포에 추가·수정한 파일) | 학습 완료 |
 
 ## 1. `ARX_eMamba_WB/` — eMamba IP 의 RVX 플랫폼
 
@@ -40,6 +41,22 @@ layer 21 (Detect) 와 후처리, 입력 정규화 / int8 양자화는 SW 에서 
 
 모든 step 출력이 INT8 reference 모델과 bit-exact 임을 Vivado xsim 으로 확인했습니다. 아직 위 RVX 플랫폼에는
 붙이지 않았습니다 (합성, 보드용 메모리 구성, 플랫폼 연결은 진행 전).
+
+## 3. `ARX_eMambaYOLO_RTL__training/` — eMamba-YOLO 학습
+
+Mamba-YOLO-T 를 eMamba RTL 에 맞게 다시 학습한 코드와 모델입니다. 설명: [`README.md`](ARX_eMambaYOLO_RTL__training/README.md)
+
+| 단계 | 내용 | COCO mAP50-95 |
+|---|---|---|
+| 1 | SSM delta 활성화 softplus → ReLU, 처음부터 300 epoch | 0.4503 |
+| 2 | LayerNorm → LightNorm, GELU → SiLU 변환 (`prepare_hw_finetune.py`) | — |
+| 3 | 30 epoch fine-tune → `mambayolo_t_relu_lightnorm.pt` | 0.4438 |
+
+| 경로 | 내용 |
+|---|---|
+| `MambaYOLO_eMamba_reference/model/` | 수정한 모델 코드 (SS2D backend, LightNorm / SiLU, eMamba 방식 SS2D), 3 단계 yaml 과 모델 |
+| `MambaYOLO_eMamba_reference/train/` | 학습 스크립트, 2 단계 변환 |
+| `MambaYOLO_eMamba_reference/quantization/` | layer 0–20 INT8 PTQ 와 eMamba SSM 코어 golden 모델 |
 
 ## 두 프로젝트의 관계
 
