@@ -5,8 +5,8 @@ V3–V4 는 eMamba SSM 코어를 쓰는 물체 검출 모델 eMamba-YOLO 의 RTL
 
 | 폴더 | 내용 | 상태 |
 |---|---|---|
-| [`V1. ARX_eMamba (Weight-Bias Embedding)/`](<V1. ARX_eMamba (Weight-Bias Embedding)>) | eMamba IP 첫 버전. weight / bias 를 RTL 안에 상수로 내장 (Genesys2-eb 보드) | frozen |
-| [`V2. ARX_eMamba_WB (Weight-Bias BRAM)/`](<V2. ARX_eMamba_WB (Weight-Bias BRAM)>) | eMamba IP. weight / bias 를 BRAM 에 두고 broadcast 로 적재 (Edge-19p 보드) | frozen, 보드용 플랫폼 |
+| [`V1. ARX_eMamba (Weight-Bias Embedding)/`](<V1. ARX_eMamba (Weight-Bias Embedding)>) | eMamba IP 첫 버전. weight / bias 를 RTL 안에 상수로 내장 (Genesys2-eb 보드) |  |
+| [`V2. ARX_eMamba_WB (Weight-Bias BRAM)/`](<V2. ARX_eMamba_WB (Weight-Bias BRAM)>) | eMamba IP. weight / bias 를 BRAM 에 두고 broadcast 로 적재 (Edge-19p 보드) |  보드용 플랫폼 |
 | [`V3. ARX_eMambaYOLO_RTL__LayerWise pipeline/`](<V3. ARX_eMambaYOLO_RTL__LayerWise pipeline>) | eMamba-YOLO RTL (layer 0–20). layer 마다 전용 하드웨어를 두는 파이프라인 구조 | functional simulation 까지 (LUT 초과) |
 | [`V3-1.ARX_eMambaYOLO_RTL__training/`](<V3-1.ARX_eMambaYOLO_RTL__training>) | V3 / V4 RTL 의 기준 모델을 만든 학습 · 양자화 코드와 모델 | 학습 완료 |
 | [`V4. ARX_eMambaYOLO_RTL__SharedEngine scheduler/`](<V4. ARX_eMambaYOLO_RTL__SharedEngine scheduler>) | eMamba-YOLO RTL. 연산 엔진 몇 개를 scheduler 가 layer 순서대로 돌려쓰는 구조 | 준비 중 |
