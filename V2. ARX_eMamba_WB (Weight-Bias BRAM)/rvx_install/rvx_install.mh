@@ -1,0 +1,71 @@
+# ****************************************************************************
+# ****************************************************************************
+# Copyright SoC Design Research Group, All rights reserved.
+# Electronics and Telecommunications Research Institute (ETRI)
+# 
+# THESE DOCUMENTS CONTAIN CONFIDENTIAL INFORMATION AND KNOWLEDGE
+# WHICH IS THE PROPERTY OF ETRI. NO PART OF THIS PUBLICATION IS
+# TO BE USED FOR ANY OTHER PURPOSE, AND THESE ARE NOT TO BE
+# REPRODUCED, COPIED, DISCLOSED, TRANSMITTED, STORED IN A RETRIEVAL
+# SYSTEM OR TRANSLATED INTO ANY OTHER HUMAN OR COMPUTER LANGUAGE,
+# IN ANY FORM, BY ANY MEANS, IN WHOLE OR IN PART, WITHOUT THE
+# COMPLETE PRIOR WRITTEN PERMISSION OF ETRI.
+# ****************************************************************************
+# 2019-04-03
+# Kyuseung Han (han@etri.re.kr)
+# ****************************************************************************
+# ****************************************************************************
+
+ifdef RVX_MINI_HOME
+	-include ${RVX_MINI_HOME}/rvx_config.mh
+endif
+
+include ./rvx_init.mh
+-include ./rvx_each.mh
+-include ${RVX_ENV}/makefile/rvx_home.mh
+
+###########
+# install #
+###########
+
+PYTHON_CMD_LIST = prepare gnome windows_binary ssh misc config \
+									clean distclean \
+									sync resync activate rvx_version \
+									enable_debug disable_debug check_remote_log tool_config \
+									after_update \
+									example example.install example.uninstall \
+									compiler compiler.install compiler.uninstall \
+									synthesizer synthesizer.install synthesizer.uninstall \
+									freeze unfreeze git_add_result \
+									freeze_git \
+									check
+
+${PYTHON_CMD_LIST}:%:
+	@${PYTHON3_CMD} ./rvx_install/install.py -cmd $(*)
+
+_check_mini_home:
+	$(if $(RVX_MINI_HOME), , $(error RVX_MINI_HOME is NOT defined))
+
+_check_linux:
+	@uname
+
+gui:
+	@java -jar ./rvx_install/rvx_remote.jar
+
+platform_gui:
+	@cd ./platform && make gui
+
+SETUP_CMD_LIST = setup_imp_class_info setup_repo update_repo
+${SETUP_CMD_LIST}:%:
+	@${PYTHON3_CMD} ./rvx_install/setup_repo.py -c $(*) -i ./rvx_install -r ${CURDIR}
+
+########
+# fork #
+########
+
+FORK_CMD_LIST=fork fork.f fork.u fork.fu fork.uf
+
+${FORK_CMD_LIST}:%:
+	@${PYTHON3_CMD} ./rvx_install/fork_repo.py -cmd $(*) -o ${CURDIR} -t ${TARGET}
+
+.PHONY: ${PYTHON_CMD_LIST} _check_linux _check_mini_home

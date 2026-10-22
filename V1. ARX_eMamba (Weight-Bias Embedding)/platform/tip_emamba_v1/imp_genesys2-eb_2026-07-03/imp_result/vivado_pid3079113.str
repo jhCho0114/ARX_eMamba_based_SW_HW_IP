@@ -1,0 +1,336 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 3079113
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jul 06 11:25:03 KST 2026
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Ubuntu
+OS Version: 6.8.0-124-generic
+OS Architecture: amd64
+Available processors (cores): 256
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: localhost:12.0
+Screen size: 2560x1440
+Local screen bounds: x = 0, y = 0, width = 2560, height = 1440
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	sanghun
+User home directory: /home/sanghun
+User working directory: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.1/data:/tools/Xilinx/Vivado/2024.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.1/bin
+
+Vivado preferences file: /home/sanghun/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/sanghun/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/sanghun/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result/vivado.log
+Vivado journal file: 	/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3079113-Venus
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.1/data:/tools/Xilinx/Vivado/2024.1/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu/22:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.1/bin:/tools/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result:Venus_1783304511_3076494
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.1/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: /tools/Xilinx/license
+XILINX_DSP: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.1
+XILINX_SDK: /tools/Xilinx/Vitis/2024.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 2,116 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Message: xterm: /opt/anaconda3/2025.12/lib/libtinfo.so.6: no version information available (required by xterm) xterm: /opt/anaconda3/2025.12/lib/libtinfo.so.6: no version information available (required by xterm) 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: source /dev/stdin 
+// Tcl Message: # 'EOF' 
+// Tcl Message: invalid command name "'EOF'"     while executing "'EOF'"     (file "/dev/stdin" line 1) 
+dismissDialog("Sourcing Tcl script '/dev/stdin'"); // bj (Sourcing Tcl script '/dev/stdin' Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,153 MB. GUI used memory: 74 MB. Current time: 7/6/26, 11:25:04 AM KST
+unMinimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // R (PAResourceOtoP.PAViews_TCL_CONSOLE, Tcl Console)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ls", true); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)
+// Tcl Command: 'ls'
+// Tcl Message: ls 
+// Tcl Message: invalid command name "ls" ambiguous command name "ls": lsearch lset lsort 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "dir", true); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)
+// Tcl Command: 'dir'
+// Tcl Message: dir 
+// Tcl Message: invalid command name "dir" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "pwd", true); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)
+// Tcl Command: 'pwd'
+// Tcl Message: pwd 
+// Tcl Message: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result 
+// [GUI Memory]: 106 MB (+108179kb) [00:00:20]
+// [Engine Memory]: 2,156 MB (+2109413kb) [00:00:20]
+// Tcl (Dont Echo) Command: 'rdi::info_commands {clea*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {open*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {open_*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {open_ch*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {open_check*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands bd::match_path'
+// Elapsed time: 30 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "open_checkpoint ./routed.dcp", true); // h.b (RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE)
+// Tcl Command: 'open_checkpoint ./routed.dcp'
+// Tcl Message: open_checkpoint ./routed.dcp 
+// Tcl Message: Command: open_checkpoint ./routed.dcp  Starting open_checkpoint Task  Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.05 . Memory (MB): peak = 8236.137 ; gain = 0.000 ; free physical = 690024 ; free virtual = 772903 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 151 MB (+42323kb) [00:00:52]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,384 MB. GUI used memory: 77 MB. Current time: 7/6/26, 11:25:49 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,350 MB. GUI used memory: 76 MB. Current time: 7/6/26, 11:26:09 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,127 MB. GUI used memory: 76 MB. Current time: 7/6/26, 11:26:14 AM KST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 4,402 MB (+2241797kb) [00:01:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,402 MB. GUI used memory: 76 MB. Current time: 7/6/26, 11:26:23 AM KST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result/./.Xil/Vivado-3079113-Venus/xc7k325t_detail.xgd_1E7C0E03 elapsed time: 1s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.1s
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1034 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k325tffg900-2 INFO: [Device 21-9227] Part: xc7k325tffg900-2 does not have CEAM library. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8950.270 ; gain = 0.000 ; free physical = 689281 ; free virtual = 772159 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 24822 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.4 . Memory (MB): peak = 9204.660 ; gain = 50.312 ; free physical = 689035 ; free virtual = 771913 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.23 . Memory (MB): peak = 10184.219 ; gain = 0.000 ; free physical = 688146 ; free virtual = 771024 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10184.219 ; gain = 0.000 ; free physical = 688146 ; free virtual = 771024 Read PlaceDB: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 10329.164 ; gain = 144.945 ; free physical = 688016 ; free virtual = 770895 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10329.164 ; gain = 0.000 ; free physical = 688016 ; free virtual = 770895 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 10458.594 ; gain = 129.430 ; free physical = 687872 ; free virtual = 770751 Read Physdb Files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 10458.594 ; gain = 274.375 ; free physical = 687872 ; free virtual = 770751 
+// Tcl Message: Restored from archive | CPU: 11.370000 secs | Memory: 278.913849 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 10458.594 ; gain = 274.375 ; free physical = 687872 ; free virtual = 770751 Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 10458.594 ; gain = 0.000 ; free physical = 687871 ; free virtual = 770750 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 12 instances were transformed.   RAM64M => RAM64M (RAMD64E(x4)): 12 instances  
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Device view-level: 0.0
+// [GUI Memory]: 159 MB (+269kb) [00:01:31]
+// [GUI Memory]: 168 MB (+718kb) [00:01:31]
+// [GUI Memory]: 184 MB (+8770kb) [00:01:31]
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Device view-level: 0.0
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// Tcl Message: INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996 
+// Tcl Message: open_checkpoint: Time (s): cpu = 00:01:01 ; elapsed = 00:00:41 . Memory (MB): peak = 10603.930 ; gain = 2367.793 ; free physical = 687793 ; free virtual = 770680 
+// Tcl Message: checkpoint_routed 
+// Elapsed Time for: 'c.c': 41s
+// Elapsed time: 41 seconds
+dismissDialog("Tcl Command"); // bj (Tcl Command Progress)
+// [Engine Memory]: 4,634 MB (+12193kb) [00:01:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,716 MB. GUI used memory: 109 MB. Current time: 7/6/26, 11:26:25 AM KST
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 10.2s
+// Device view-level: 0.0
+// [Engine Memory]: 5,343 MB (+501155kb) [00:01:40]
+// [GUI Memory]: 194 MB (+685kb) [00:02:34]
+// Elapsed time: 67 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[TIP_EMAMBA_V1_FPGA, Nets (41460)]", 1); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[TIP_EMAMBA_V1_FPGA, Nets (41460)]", 1); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // ap (PAResourceCommand.PACommandNames_REPORT_IP_STATUS, report_ip_status_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+selectButton("OptionPane.button", "OK", "Report IP Status"); // JButton (OptionPane.button)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // am (PAResourceItoN.MainMenuMgr_IO, IO)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IO, "Report IO..."); // ap (PAResourceCommand.PACommandNames_REPORT_IO, report_io_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IO
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report IO"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Report IO"); // a (dialog0)
+// TclEventType: HCR_IO_GEN
+// Tcl Message: report_io -name io_1 
+// Tcl Message: report_io: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.54 . Memory (MB): peak = 13442.703 ; gain = 0.000 ; free physical = 686879 ; free virtual = 769760 
+dismissDialog("Report IO"); // bj (Report IO Progress)
+// Device view-level: 0.0
+selectTree(PAResourceEtoH.GenericReportTab_GENERIC_REPORT_NAVIGATION_TREE, "[Report Contents, IO Assignments by Package Pin]", 2, false); // h (PAResourceEtoH.GenericReportTab_GENERIC_REPORT_NAVIGATION_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,399 MB. GUI used memory: 110 MB. Current time: 7/6/26, 11:28:09 AM KST
+selectTree(PAResourceEtoH.GenericReportTab_GENERIC_REPORT_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // h (PAResourceEtoH.GenericReportTab_GENERIC_REPORT_NAVIGATION_TREE)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // am (PAResourceItoN.MainMenuMgr_FLOORPLANNING, Floorplanning)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // am (PAResourceItoN.MainMenuMgr_IO_PLANNING, I/O Planning)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // am (PAResourceItoN.MainMenuMgr_TIMING, Timing)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // am (PAResourceItoN.MainMenuMgr_TIMING, Timing)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // am (PAResourceItoN.MainMenuMgr_IO_PLANNING, I/O Planning)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // am (PAResourceItoN.MainMenuMgr_FLOORPLANNING, Floorplanning)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // am (PAResourceItoN.MainMenuMgr_IO, IO)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // am (PAResourceItoN.MainMenuMgr_TIMING, Timing)
+selectMenuItem(PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION, "Report Utilization..."); // ap (PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION, resource_utilization_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report Utilization"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Report Utilization"); // a (dialog1)
+// Tcl Message: report_utilization -name utilization_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,487 MB. GUI used memory: 110 MB. Current time: 7/6/26, 11:28:29 AM KST
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 204 MB (+285kb) [00:03:38]
+// [Engine Memory]: 6,031 MB (+440557kb) [00:03:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,087 MB. GUI used memory: 144 MB. Current time: 7/6/26, 11:28:35 AM KST
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 13442.703 ; gain = 0.000 ; free physical = 686629 ; free virtual = 769510 
+// Elapsed time: 13 seconds
+dismissDialog("Report Utilization"); // bj (Report Utilization Progress)
+expandTreeTable((HResource) null, "i_platform (TIP_EMAMBA_V1) ; 115288 ; 74460 ; 5087 ; 2320 ; 44740 ; 114460 ; 828 ; 32 ; 300 ; 0 ; 1 ; 2 ; 1 ; 0", 1); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+// [GUI Memory]: 220 MB (+5789kb) [00:03:46]
+// PAPropertyPanels.initPanels (i_rtl (TIP_EMAMBA_V1_RTL)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "i_rtl (TIP_EMAMBA_V1_RTL) ; 10179 ; 15099 ; 863 ; 280 ; 7638 ; 10131 ; 48 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0", 3, "15099", 2, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "i_system_sram (TIP_EMAMBA_V1_SRAM_AXI_01) ; 162 ; 310 ; 0 ; 0 ; 149 ; 162 ; 0 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0", 4, "162", 1, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "i_rtl (TIP_EMAMBA_V1_RTL) ; 10179 ; 15099 ; 863 ; 280 ; 7638 ; 10131 ; 48 ; 0 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0", 3, "10179", 1, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+selectButton(PAResourceTtoZ.UtilizationHierViewTreeTablePanel_SHOW_PERCENTAGE, (String) null); // v (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_SHOW_PERCENTAGE): TRUE
+expandTreeTable((HResource) null, "i_pll0 (TIP_EMAMBA_V1_CLOCK_PLL_0_00) ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.21% ; 6.25% ; 10.00% ; 0.00%", 2); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+collapseTreeTable((HResource) null, "i_pll0 (TIP_EMAMBA_V1_CLOCK_PLL_0_00) ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.21% ; 6.25% ; 10.00% ; 0.00%", 2); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+expandTreeTable((HResource) null, "my_emamba_ip (eMamba_IP) ; 51.50% ; 14.49% ; 4.15% ; 4.00% ; 81.86% ; 51.11% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 5); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+collapseTreeTable((HResource) null, "my_emamba_ip (eMamba_IP) ; 51.50% ; 14.49% ; 4.15% ; 4.00% ; 81.86% ; 51.11% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 5); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // am (PAResourceItoN.MainMenuMgr_IO, IO)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // am (PAResourceItoN.MainMenuMgr_TIMING, Timing)
+// Elapsed time: 13 seconds
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+// Elapsed time: 249 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "my_emamba_ip (eMamba_IP) ; 51.50% ; 14.49% ; 4.15% ; 4.00% ; 81.86% ; 51.11% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 5, "my_emamba_ip (eMamba_IP)", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+expandTreeTable((HResource) null, "my_emamba_ip (eMamba_IP) ; 51.50% ; 14.49% ; 4.15% ; 4.00% ; 81.86% ; 51.11% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 5); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "eMamba (eMamba) ; 49.20% ; 11.80% ; 2.43% ; 2.31% ; 75.02% ; 48.82% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 6, "eMamba (eMamba)", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+expandTreeTable((HResource) null, "eMamba (eMamba) ; 49.20% ; 11.80% ; 2.43% ; 2.31% ; 75.02% ; 48.82% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 6); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+collapseTreeTable((HResource) null, "eMamba (eMamba) ; 49.20% ; 11.80% ; 2.43% ; 2.31% ; 75.02% ; 48.82% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 6); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+collapseTreeTable((HResource) null, "my_emamba_ip (eMamba_IP) ; 51.50% ; 14.49% ; 4.15% ; 4.00% ; 81.86% ; 51.11% ; 1.22% ; 0.00% ; 35.24% ; 0.00% ; 0.00% ; 0.00% ; 0.00% ; 0.00%", 5); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+// Elapsed time: 29 seconds
+selectTab((HResource) null, (HResource) null, "Report I/O", 2); // aa
+selectTree(PAResourceEtoH.GenericReportTab_GENERIC_REPORT_NAVIGATION_TREE, "[Report Contents, IO Assignments by Package Pin]", 2, false); // h (PAResourceEtoH.GenericReportTab_GENERIC_REPORT_NAVIGATION_TREE)
+selectTab((HResource) null, (HResource) null, "Utilization", 3); // aa
+// Device view-level: 0.2
+// HMemoryUtils.trashcanNow. Engine heap size: 5,597 MB. GUI used memory: 139 MB. Current time: 7/6/26, 11:36:02 AM KST
+// Device view-level: 0.4
+// Elapsed time: 115 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 781989, 874876); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (4407, 894, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 0.7
+// [GUI Memory]: 235 MB (+3920kb) [00:11:13]
+// Device view-level: 1.3
+// [GUI Memory]: 250 MB (+3045kb) [00:11:13]
+// Device view-level: 2.2
+// HMemoryUtils.trashcanNow. Engine heap size: 5,579 MB. GUI used memory: 144 MB. Current time: 7/6/26, 11:36:07 AM KST
+// Device view-level: 2.5
+// Device view-level: 2.8
+// Device view-level: 3.6
+// Device view-level: 3.0
+// [GUI Memory]: 262 MB (+146kb) [00:11:15]
+// Device view-level: 2.8
+// HMemoryUtils.trashcanNow. Engine heap size: 5,603 MB. GUI used memory: 146 MB. Current time: 7/6/26, 11:36:10 AM KST
+// Device view-level: 2.2
+// Device view-level: 1.9
+// Device view-level: 1.6
+// Device view-level: 1.3
+// Device view-level: 1.0
+// HMemoryUtils.trashcanNow. Engine heap size: 5,603 MB. GUI used memory: 145 MB. Current time: 7/6/26, 11:36:11 AM KST
+// Device view-level: 0.7
+// Device view-level: 0.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 954517, 851627); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (4548, 875, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// HMemoryUtils.trashcanNow. Engine heap size: 5,593 MB. GUI used memory: 143 MB. Current time: 7/6/26, 12:06:14 PM KST
+// Elapsed time: 2043 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -474651, 456404); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (3380, 552, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -428154, 335267); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (3418, 453, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// HMemoryUtils.trashcanNow. Engine heap size: 5,593 MB. GUI used memory: 124 MB. Current time: 7/6/26, 12:36:14 PM KST

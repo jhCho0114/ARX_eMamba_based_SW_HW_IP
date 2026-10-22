@@ -1,0 +1,2242 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Jul  6 11:19:00 2026
+# Process ID: 3071999
+# Current directory: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result/tip_emamba_v1_fpga.runs/synth_1
+# Command line: vivado -log TIP_EMAMBA_V1_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TIP_EMAMBA_V1_FPGA.tcl
+# Log file: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result/tip_emamba_v1_fpga.runs/synth_1/TIP_EMAMBA_V1_FPGA.vds
+# Journal file: /home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/imp_result/tip_emamba_v1_fpga.runs/synth_1/vivado.jou
+# Running On        :Venus
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD EPYC 9754 128-Core Processor
+# CPU Frequency     :1500.000 MHz
+# CPU Physical cores:128
+# CPU Logical cores :256
+# Host memory       :810823 MB
+# Swap memory       :24576 MB
+# Total Virtual     :835400 MB
+# Available Virtual :810324 MB
+#-----------------------------------------------------------
+source TIP_EMAMBA_V1_FPGA.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1460.352 ; gain = 21.836 ; free physical = 689492 ; free virtual = 772371
+Command: synth_design -top TIP_EMAMBA_V1_FPGA -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1540] The version limit for your license is '2026.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Device 21-9227] Part: xc7k325tffg900-2 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3072175
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2290.555 ; gain = 421.715 ; free physical = 688388 ; free virtual = 771268
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'SSM_preprocess_dOut_ready', assumed default net type 'wire' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/SSM.sv:173]
+WARNING: [Synth 8-10940] macro 'MUNOC_LDEF_5' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:104]
+WARNING: [Synth 8-10940] macro 'MUNOC_LDEF_4' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:105]
+WARNING: [Synth 8-10940] macro 'MUNOC_LDEF_6' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:106]
+WARNING: [Synth 8-10940] macro 'MUNOC_LDEF_2' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:115]
+WARNING: [Synth 8-10940] macro 'MUNOC_LDEF_3' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:131]
+WARNING: [Synth 8-10940] macro 'MUNOC_LDEF_1' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:136]
+WARNING: [Synth 8-10940] macro 'RVX_LDEF_2' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:93]
+WARNING: [Synth 8-10940] macro 'RVX_LDEF_3' is redefined [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:94]
+INFO: [Synth 8-11241] undeclared symbol 'spi_flash_sclk', assumed default net type 'wire' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/src/tip_emamba_v1_fpga.v:70]
+INFO: [Synth 8-6157] synthesizing module 'TIP_EMAMBA_V1_FPGA' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/src/tip_emamba_v1_fpga.v:26]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/src/tip_emamba_v1_fpga.v:58]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137432]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [/tools/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137432]
+INFO: [Synth 8-6157] synthesizing module 'TIP_EMAMBA_V1' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/arch/rtl/src/tip_emamba_v1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'TIP_EMAMBA_V1_RTL' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/arch/rtl/src/tip_emamba_v1_rtl.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVC_ORCA' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca/src/rvc_orca.v:18]
+	Parameter RESET_VECTOR bound to: -503316480 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter ENABLE_INTERRUPTS bound to: 0 - type: integer 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'orca' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca.vhd:406]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter RESET_VECTOR bound to: -503316480 - type: integer 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: integer 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter PIPELINE_STAGES bound to: 5 - type: integer 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: integer 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter DCACHE_WRITEBACK bound to: 0 - type: integer 
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter RESET_VECTOR bound to: 32'b11100010000000000000000000000000 
+	Parameter INTERRUPT_VECTOR bound to: 32'b00000000000000000000001000000000 
+	Parameter MAX_IFETCHES_IN_FLIGHT bound to: 1 - type: integer 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: bool 
+	Parameter SHIFTER_MAX_CYCLES bound to: 1 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter PIPELINE_STAGES bound to: 5 - type: integer 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: bool 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter WRITE_FIRST_SMALL_RAMS bound to: 0 - type: bool 
+	Parameter FAMILY bound to: GENERIC - type: string 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter AMR0_READ_ONLY bound to: 1 - type: bool 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter UMR0_READ_ONLY bound to: 0 - type: bool 
+	Parameter HAS_ICACHE bound to: 1 - type: bool 
+	Parameter HAS_DCACHE bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'orca_core' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca_core.vhd:9' bound to instance 'core' of component 'orca_core' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca.vhd:480]
+INFO: [Synth 8-638] synthesizing module 'orca_core' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca_core.vhd:111]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter RESET_VECTOR bound to: 32'b11100010000000000000000000000000 
+	Parameter INTERRUPT_VECTOR bound to: 32'b00000000000000000000001000000000 
+	Parameter MAX_IFETCHES_IN_FLIGHT bound to: 1 - type: integer 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: bool 
+	Parameter SHIFTER_MAX_CYCLES bound to: 1 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter PIPELINE_STAGES bound to: 5 - type: integer 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: bool 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter WRITE_FIRST_SMALL_RAMS bound to: 0 - type: bool 
+	Parameter FAMILY bound to: GENERIC - type: string 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter AMR0_READ_ONLY bound to: 1 - type: bool 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter UMR0_READ_ONLY bound to: 0 - type: bool 
+	Parameter HAS_ICACHE bound to: 1 - type: bool 
+	Parameter HAS_DCACHE bound to: 1 - type: bool 
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter RESET_VECTOR bound to: 32'b11100010000000000000000000000000 
+	Parameter MAX_IFETCHES_IN_FLIGHT bound to: 1 - type: integer 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'instruction_fetch' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/instruction_fetch.vhd:10' bound to instance 'I' of component 'instruction_fetch' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca_core.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'instruction_fetch' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/instruction_fetch.vhd:50]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter RESET_VECTOR bound to: 32'b11100010000000000000000000000000 
+	Parameter MAX_IFETCHES_IN_FLIGHT bound to: 1 - type: integer 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'instruction_fetch' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/instruction_fetch.vhd:50]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter PIPELINE_STAGES bound to: 2 - type: integer 
+	Parameter WRITE_FIRST_SMALL_RAMS bound to: 0 - type: bool 
+	Parameter FAMILY bound to: GENERIC - type: string 
+INFO: [Synth 8-3491] module 'decode' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/decode.vhd:10' bound to instance 'D' of component 'decode' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca_core.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'decode' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/decode.vhd:51]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter PIPELINE_STAGES bound to: 2 - type: integer 
+	Parameter WRITE_FIRST_SMALL_RAMS bound to: 0 - type: bool 
+	Parameter FAMILY bound to: GENERIC - type: string 
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter REGISTER_NAME_SIZE bound to: 5 - type: integer 
+	Parameter READ_PORTS bound to: 2 - type: integer 
+	Parameter WRITE_FIRST_SMALL_RAMS bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'register_file' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/register_file.vhd:7' bound to instance 'the_register_file' of component 'register_file' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/decode.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'register_file' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/register_file.vhd:30]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter REGISTER_NAME_SIZE bound to: 5 - type: integer 
+	Parameter READ_PORTS bound to: 2 - type: integer 
+	Parameter WRITE_FIRST_SMALL_RAMS bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/register_file.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'decode' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/decode.vhd:51]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter INTERRUPT_VECTOR bound to: 32'b00000000000000000000001000000000 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: bool 
+	Parameter SHIFTER_MAX_CYCLES bound to: 1 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: bool 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter FAMILY bound to: GENERIC - type: string 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter AMR0_READ_ONLY bound to: 1 - type: bool 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter UMR0_READ_ONLY bound to: 0 - type: bool 
+	Parameter HAS_ICACHE bound to: 1 - type: bool 
+	Parameter HAS_DCACHE bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'execute' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:14' bound to instance 'X' of component 'execute' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca_core.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'execute' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:136]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter INTERRUPT_VECTOR bound to: 32'b00000000000000000000001000000000 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: bool 
+	Parameter SHIFTER_MAX_CYCLES bound to: 1 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: bool 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter FAMILY bound to: GENERIC - type: string 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter AMR0_READ_ONLY bound to: 1 - type: bool 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter UMR0_READ_ONLY bound to: 0 - type: bool 
+	Parameter HAS_ICACHE bound to: 1 - type: bool 
+	Parameter HAS_DCACHE bound to: 1 - type: bool 
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: bool 
+	Parameter SHIFTER_MAX_CYCLES bound to: 1 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter FAMILY bound to: GENERIC - type: string 
+INFO: [Synth 8-3491] module 'arithmetic_unit' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:9' bound to instance 'alu' of component 'arithmetic_unit' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'arithmetic_unit' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:42]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter DIVIDE_ENABLE bound to: 1 - type: bool 
+	Parameter SHIFTER_MAX_CYCLES bound to: 1 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter FAMILY bound to: GENERIC - type: string 
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'divider' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:692' bound to instance 'div' of component 'divider' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:507]
+INFO: [Synth 8-638] synthesizing module 'divider' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:708]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:708]
+INFO: [Synth 8-256] done synthesizing module 'arithmetic_unit' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/alu.vhd:42]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'branch_unit' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/branch_unit.vhd:8' bound to instance 'branch' of component 'branch_unit' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:402]
+INFO: [Synth 8-638] synthesizing module 'branch_unit' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/branch_unit.vhd:41]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter BTB_ENTRIES bound to: 0 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'branch_unit' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/branch_unit.vhd:41]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'load_store_unit' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/load_store_unit.vhd:8' bound to instance 'ls_unit' of component 'load_store_unit' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:433]
+INFO: [Synth 8-638] synthesizing module 'load_store_unit' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/load_store_unit.vhd:48]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter SIGN_EXTENSION_SIZE bound to: 20 - type: integer 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'load_store_unit' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/load_store_unit.vhd:48]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter INTERRUPT_VECTOR bound to: 32'b00000000000000000000001000000000 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: bool 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter AMR0_READ_ONLY bound to: 1 - type: bool 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter UMR0_READ_ONLY bound to: 0 - type: bool 
+	Parameter HAS_ICACHE bound to: 1 - type: bool 
+	Parameter HAS_DCACHE bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'sys_call' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/sys_call.vhd:9' bound to instance 'syscall' of component 'sys_call' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:474]
+INFO: [Synth 8-638] synthesizing module 'sys_call' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/sys_call.vhd:92]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter POWER_OPTIMIZED bound to: 0 - type: bool 
+	Parameter INTERRUPT_VECTOR bound to: 32'b00000000000000000000001000000000 
+	Parameter ENABLE_EXCEPTIONS bound to: 0 - type: bool 
+	Parameter ENABLE_EXT_INTERRUPTS bound to: 0 - type: bool 
+	Parameter NUM_INTERRUPTS bound to: 1 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+	Parameter MULTIPLY_ENABLE bound to: 1 - type: bool 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter AMR0_READ_ONLY bound to: 1 - type: bool 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter UMR0_READ_ONLY bound to: 0 - type: bool 
+	Parameter HAS_ICACHE bound to: 1 - type: bool 
+	Parameter HAS_DCACHE bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'sys_call' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/sys_call.vhd:92]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'vcp_handler' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/vcp_handler.vhd:12' bound to instance 'vcp_port' of component 'vcp_handler' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:553]
+INFO: [Synth 8-638] synthesizing module 'vcp_handler' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/vcp_handler.vhd:39]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter VCP_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vcp_handler' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/vcp_handler.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'execute' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/execute.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'orca_core' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca_core.vhd:111]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+	Parameter WISHBONE_SINGLE_CYCLE_READS bound to: 0 - type: bool 
+	Parameter MAX_IFETCHES_IN_FLIGHT bound to: 1 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 4 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter AVALON_AUX bound to: 0 - type: bool 
+	Parameter WISHBONE_AUX bound to: 0 - type: bool 
+	Parameter LMB_AUX bound to: 0 - type: bool 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter ICACHE_SIZE bound to: 32768 - type: integer 
+	Parameter ICACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter ICACHE_EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter INSTRUCTION_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter INSTRUCTION_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter IUC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter IUC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter IAUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter IAUX_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter IC_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter IC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DCACHE_SIZE bound to: 32768 - type: integer 
+	Parameter DCACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter DCACHE_EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter DCACHE_WRITEBACK bound to: 0 - type: bool 
+	Parameter DCACHE_DIRTY_BITS bound to: 0 - type: integer 
+	Parameter DATA_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter DATA_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DUC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter DUC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DAUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter DAUX_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DC_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter DC_RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'memory_interface' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:10' bound to instance 'the_memory_interface' of component 'memory_interface' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca.vhd:581]
+INFO: [Synth 8-638] synthesizing module 'memory_interface' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:388]
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+	Parameter WISHBONE_SINGLE_CYCLE_READS bound to: 0 - type: bool 
+	Parameter MAX_IFETCHES_IN_FLIGHT bound to: 1 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 4 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter AVALON_AUX bound to: 0 - type: bool 
+	Parameter WISHBONE_AUX bound to: 0 - type: bool 
+	Parameter LMB_AUX bound to: 0 - type: bool 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter ICACHE_SIZE bound to: 32768 - type: integer 
+	Parameter ICACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter ICACHE_EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter INSTRUCTION_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter INSTRUCTION_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter IUC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter IUC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter IAUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter IAUX_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter IC_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter IC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DCACHE_SIZE bound to: 32768 - type: integer 
+	Parameter DCACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter DCACHE_EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter DCACHE_WRITEBACK bound to: 0 - type: bool 
+	Parameter DCACHE_DIRTY_BITS bound to: 0 - type: integer 
+	Parameter DATA_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter DATA_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DUC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter DUC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DAUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter DAUX_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter DC_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter DC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_READS bound to: 1 - type: integer 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter INTERNAL_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter INTERNAL_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter UC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter UC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter AUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter AUX_RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'cache_mux' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:20' bound to instance 'instruction_cache_mux' of component 'cache_mux' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:486]
+INFO: [Synth 8-638] synthesizing module 'cache_mux' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:99]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_READS bound to: 1 - type: integer 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter INTERNAL_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter INTERNAL_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter UC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter UC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter AUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter AUX_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'oimm_register' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:10' bound to instance 'internal_oimm_register' of component 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:52]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 2 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'oimm_register' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:52]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'oimm_register' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:10' bound to instance 'uc_oimm_register' of component 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:402]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'oimm_register' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:10' bound to instance 'aux_oimm_register' of component 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:441]
+INFO: [Synth 8-256] done synthesizing module 'cache_mux' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:99]
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter INTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter POLICY bound to: 0 - type: integer 
+	Parameter REGION_OPTIMIZATIONS bound to: 1 - type: bool 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'cache_controller' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:10' bound to instance 'instruction_cache' of component 'cache_controller' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:570]
+INFO: [Synth 8-638] synthesizing module 'cache_controller' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:80]
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter INTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter POLICY bound to: 0 - type: integer 
+	Parameter REGION_OPTIMIZATIONS bound to: 1 - type: bool 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:223]
+	Parameter NUM_LINES bound to: 1024 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'cache' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache.vhd:9' bound to instance 'the_cache' of component 'cache' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'cache' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache.vhd:57]
+	Parameter NUM_LINES bound to: 1024 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'cache' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'cache_controller' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:80]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 0 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'axi_master' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:14' bound to instance 'ic_master' of component 'axi_master' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:638]
+INFO: [Synth 8-638] synthesizing module 'axi_master' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:87]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 0 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17' bound to instance 'ervp_master' of component 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:92]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17]
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SMALL_FIFO' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_small_fifo.v:23]
+	Parameter BW_DATA bound to: 37 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SHIFT_REGISTER' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_shift_register.v:22]
+	Parameter BW_REGISTER bound to: 8 - type: integer 
+	Parameter RESET_NUMBER bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SHIFT_REGISTER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_shift_register.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER_WITH_ONEHOT_ENCODING' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter_with_onehot_encoding.v:21]
+	Parameter COUNT_LENGTH bound to: 8 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER_WITH_ONEHOT_ENCODING' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter_with_onehot_encoding.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 37 - type: integer 
+	Parameter NUM_DATA bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SMALL_FIFO' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_small_fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17]
+INFO: [Synth 8-256] done synthesizing module 'axi_master' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:87]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_READS bound to: 1 - type: integer 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter INTERNAL_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter INTERNAL_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter UC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter UC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter AUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter AUX_RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'cache_mux' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:20' bound to instance 'dcache_mux' of component 'cache_mux' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:769]
+INFO: [Synth 8-638] synthesizing module 'cache_mux__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:99]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_READS bound to: 1 - type: integer 
+	Parameter AUX_MEMORY_REGIONS bound to: 0 - type: integer 
+	Parameter AMR0_ADDR_BASE bound to: 32'b00000000000000000000000000000000 
+	Parameter AMR0_ADDR_LAST bound to: 32'b11111111111111111111111111111111 
+	Parameter UC_MEMORY_REGIONS bound to: 1 - type: integer 
+	Parameter UMR0_ADDR_BASE bound to: 32'b11111111111111111111111111111111 
+	Parameter UMR0_ADDR_LAST bound to: 32'b00000000000000000000000000000000 
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+	Parameter INTERNAL_REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter INTERNAL_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter UC_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter UC_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter AUX_REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter AUX_RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'oimm_register' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:10' bound to instance 'internal_oimm_register' of component 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'oimm_register__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:52]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 2 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'oimm_register__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:52]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'oimm_register' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:10' bound to instance 'uc_oimm_register' of component 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:402]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 0 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'oimm_register' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/oimm_register.vhd:10' bound to instance 'aux_oimm_register' of component 'oimm_register' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:441]
+INFO: [Synth 8-256] done synthesizing module 'cache_mux__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_mux.vhd:99]
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter INTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter POLICY bound to: 1 - type: integer 
+	Parameter REGION_OPTIMIZATIONS bound to: 1 - type: bool 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'cache_controller' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:10' bound to instance 'data_cache' of component 'cache_controller' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:870]
+INFO: [Synth 8-638] synthesizing module 'cache_controller__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:80]
+	Parameter CACHE_SIZE bound to: 32768 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter INTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter EXTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter POLICY bound to: 1 - type: integer 
+	Parameter REGION_OPTIMIZATIONS bound to: 1 - type: bool 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:223]
+	Parameter NUM_LINES bound to: 1024 - type: integer 
+	Parameter LINE_SIZE bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DIRTY_BITS bound to: 0 - type: integer 
+	Parameter WRITE_FIRST_SUPPORTED bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'cache' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache.vhd:9' bound to instance 'the_cache' of component 'cache' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:386]
+INFO: [Synth 8-256] done synthesizing module 'cache_controller__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/cache_controller.vhd:80]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 4 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'axi_master' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:14' bound to instance 'dc_master' of component 'axi_master' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:936]
+INFO: [Synth 8-638] synthesizing module 'axi_master__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:87]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter LOG2_BURSTLENGTH bound to: 8 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 4 - type: integer 
+	Parameter REQUEST_REGISTER bound to: 1 - type: integer 
+	Parameter RETURN_REGISTER bound to: 0 - type: bool 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17' bound to instance 'ervp_master' of component 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'axi_master__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/axi_master.vhd:87]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'a4l_master' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:7' bound to instance 'iuc_master' of component 'a4l_master' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:1247]
+INFO: [Synth 8-638] synthesizing module 'a4l_master' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:57]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 0 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17' bound to instance 'ervp_master' of component 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:86]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17]
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SMALL_FIFO__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_small_fifo.v:23]
+	Parameter BW_DATA bound to: 37 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SHIFT_REGISTER__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_shift_register.v:22]
+	Parameter BW_REGISTER bound to: 2 - type: integer 
+	Parameter RESET_NUMBER bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SHIFT_REGISTER__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_shift_register.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER_WITH_ONEHOT_ENCODING__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter_with_onehot_encoding.v:21]
+	Parameter COUNT_LENGTH bound to: 2 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER_WITH_ONEHOT_ENCODING__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter_with_onehot_encoding.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 37 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SMALL_FIFO__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_small_fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17]
+INFO: [Synth 8-256] done synthesizing module 'a4l_master' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:57]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'a4l_master' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:7' bound to instance 'duc_master' of component 'a4l_master' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'a4l_master__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:57]
+	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_OUTSTANDING_REQUESTS bound to: 4 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' declared at '/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/ervp_orca_cache_axi_master_old.v:17' bound to instance 'ervp_master' of component 'ERVP_ORCA_CACHE_AXI_MASTER_OLD' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'a4l_master__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/a4l_master.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'memory_interface' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/memory_interface.vhd:388]
+INFO: [Synth 8-256] done synthesizing module 'orca' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca_cache/src/orca.vhd:406]
+INFO: [Synth 8-6155] done synthesizing module 'RVC_ORCA' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/core/orca/src/rvc_orca.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COMMON_PERI_GROUP' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_common_peri_group.v:26]
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_LOCK bound to: 1 - type: integer 
+	Parameter NUM_AUTO_ID bound to: 1 - type: integer 
+	Parameter NUM_GLOBAL_TAG bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_APB_BUS' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+	Parameter NUM_MODULE bound to: 5 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter SEL_UPPER_INDEX bound to: 14 - type: integer 
+	Parameter BW_SEL_INDEX bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_051' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+	Parameter RVX_GPARA_1 bound to: 5 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter NUM_DATA bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_051' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_APB_BUS' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_IROM_APB' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_irom_apb.v:24]
+	Parameter BW_ADDR bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/arch/rtl/include/irom_contents.vh:4]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_IROM_APB' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_irom_apb.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_082' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/rvx_module_082.v:26]
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_4 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_3 bound to: 101 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 101 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_082' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/rvx_module_082.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COMMON_PERI_GROUP' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_common_peri_group.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_TICK_GENERATOR' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_tick_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 10 - type: integer 
+	Parameter RESET_NUMBER bound to: 1 - type: integer 
+	Parameter CIRCULAR bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 16 - type: integer 
+	Parameter LAST_NUMBER bound to: 62499 - type: integer 
+	Parameter CIRCULAR bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_TICK_GENERATOR' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_tick_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_REAL_CLOCK' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_real_clock.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 64 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_REAL_CLOCK' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/ervp_real_clock.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_EXTERNAL_PERI_GROUP' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/external_peri_group/src/ervp_external_peri_group.v:25]
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_UART bound to: 1 - type: integer 
+	Parameter NUM_SPI bound to: 0 - type: integer 
+	Parameter NUM_I2C bound to: 0 - type: integer 
+	Parameter NUM_GPIO bound to: 0 - type: integer 
+	Parameter NUM_AIOIF bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_120' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_120.v:25]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_090' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_090.v:25]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_106' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_106.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_097' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_097.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_098' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_098.v:22]
+	Parameter RVX_GPARA_0 bound to: 7 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 8 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_098' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_098.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_097' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_097.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_106' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_106.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_073' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_073.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_027' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_027.v:26]
+	Parameter RVX_GPARA_0 bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_027' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_027.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_073' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_073.v:26]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_090.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_090' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_090.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_120' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/uart/src/rvx_module_120.v:25]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_APB_BUS__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+	Parameter NUM_MODULE bound to: 12 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter SEL_UPPER_INDEX bound to: 11 - type: integer 
+	Parameter BW_SEL_INDEX bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_051__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+	Parameter RVX_GPARA_1 bound to: 12 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized3' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized3' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized4' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter NUM_DATA bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized4' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_051__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_APB_BUS__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_110' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/external_peri_group/src/rvx_module_110.v:26]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_110' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/external_peri_group/src/rvx_module_110.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_030' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/rvx_module_030.v:25]
+	Parameter RVX_GPARA_0 bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 15 - type: integer 
+	Parameter RESET_NUMBER bound to: 1 - type: integer 
+	Parameter CIRCULAR bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_030' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/common_peri_group/src/rvx_module_030.v:25]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_078' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/external_peri_group/src/rvx_module_078.v:27]
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_GPIO' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/gpio/src/ervp_gpio.v:25]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_GPIO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SYNCHRONIZER' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+	Parameter BW_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SYNCHRONIZER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_DEBOUNCER' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_debouncer.v:23]
+	Parameter BW_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_UPDOWN_COUNTER' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_updown_counter.v:21]
+	Parameter BW_COUNTER bound to: 3 - type: integer 
+	Parameter BW_COUNT_AMOUNT bound to: 2 - type: integer 
+	Parameter UNSIGNED bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_UPDOWN_COUNTER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_updown_counter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_DEBOUNCER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_040' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_040.v:25]
+	Parameter RVX_GPARA_0 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_040.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_040.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_040.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_040' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_040.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_GPIO' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/gpio/src/ervp_gpio.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_078' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/external_peri_group/src/rvx_module_078.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_EXTERNAL_PERI_GROUP' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/external_peri_group/src/ervp_external_peri_group.v:25]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_CORE_PERI_GROUP' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/core_peri_group/src/ervp_core_peri_group.v:27]
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter PROCESS_ID bound to: 0 - type: integer 
+	Parameter NUM_LOCK bound to: 1 - type: integer 
+	Parameter NUM_GLOBAL_TAG bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_APB_BUS__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+	Parameter NUM_MODULE bound to: 6 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter SEL_UPPER_INDEX bound to: 14 - type: integer 
+	Parameter BW_SEL_INDEX bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_051__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+	Parameter RVX_GPARA_1 bound to: 6 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized5' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized5' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized6' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter NUM_DATA bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized6' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_051__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_APB_BUS__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_CORE_PERI_GROUP' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/core_peri_group/src/ervp_core_peri_group.v:27]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_PLATFORM_CONTROLLER' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/ervp_platform_controller.v:26]
+	Parameter NUM_RESET bound to: 6 - type: integer 
+	Parameter NUM_CORE bound to: 1 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter NUM_AUTO_RESET bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_APB_BUS__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+	Parameter NUM_MODULE bound to: 4 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter SEL_UPPER_INDEX bound to: 17 - type: integer 
+	Parameter BW_SEL_INDEX bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_051__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized7' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized7' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized8' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized8' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_051__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_051.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_APB_BUS__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_apb_bus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_009' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_009.v:28]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_103' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_103.v:26]
+	Parameter RVX_GPARA_2 bound to: 8 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_013' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_013.v:24]
+	Parameter RVX_GPARA_0 bound to: 8 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_013' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_013.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_013__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_013.v:24]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_013__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_013.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_103' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_103.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_108' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_108.v:26]
+	Parameter RVX_GPARA_0 bound to: 8 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SYNCHRONIZER__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+	Parameter BW_DATA bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SYNCHRONIZER__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SYNCHRONIZER__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+	Parameter BW_DATA bound to: 65 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SYNCHRONIZER__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_108.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_108' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_108.v:26]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_029' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_029.v:25]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_FIFO' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_fifo.v:23]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 63 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_UPDOWN_COUNTER__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_updown_counter.v:21]
+	Parameter BW_COUNTER bound to: 6 - type: integer 
+	Parameter BW_COUNT_AMOUNT bound to: 2 - type: integer 
+	Parameter UPPER_LIMIT_NUMBER bound to: 63 - type: integer 
+	Parameter LOWER_LIMIT_NUMBER bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_UPDOWN_COUNTER__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_updown_counter.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_UPDOWN_COUNTER__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_updown_counter.v:21]
+	Parameter BW_COUNTER bound to: 6 - type: integer 
+	Parameter BW_COUNT_AMOUNT bound to: 2 - type: integer 
+	Parameter RESET_NUMBER bound to: 63 - type: integer 
+	Parameter UPPER_LIMIT_NUMBER bound to: 63 - type: integer 
+	Parameter LOWER_LIMIT_NUMBER bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_UPDOWN_COUNTER__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_updown_counter.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER__parameterized3' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 6 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER__parameterized3' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_FIFO' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_029' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_029.v:25]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_065' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_065.v:28]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_065.v:148]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER__parameterized4' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 16 - type: integer 
+	Parameter CIRCULAR bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER__parameterized4' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_065.v:264]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_065.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_065' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_065.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_009' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/jtag_controller/src/rvx_module_009.v:28]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_123' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:27]
+	Parameter RVX_GPARA_3 bound to: 0 - type: integer 
+	Parameter RVX_GPARA_4 bound to: 6 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RESET_BUF' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_fpga/common/src/reset_buf.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'RESET_BUF' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_fpga/common/src/reset_buf.v:19]
+INFO: [Synth 8-6157] synthesizing module 'RESET_NOT' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_fpga/common/src/reset_not.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'RESET_NOT' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_fpga/common/src/reset_not.v:19]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:152]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER__parameterized5' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+	Parameter BW_COUNTER bound to: 6 - type: integer 
+	Parameter CIRCULAR bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER__parameterized5' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:210]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:227]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_123' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_123.v:27]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_058' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_058.v:29]
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_4 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_3 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_101' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_101.v:25]
+	Parameter RVX_GPARA_0 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_3 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_026' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_026.v:25]
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 66 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized9' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+	Parameter BW_DATA bound to: 66 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX_WITH_ONEHOT_ENCODED_SELECT__parameterized9' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux_with_onehot_encoded_select.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_026' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_026.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_101.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_101' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_101.v:25]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_031' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_031.v:26]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_031' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_031.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SYNCHRONIZER__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SYNCHRONIZER__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_058.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_058' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_058.v:29]
+INFO: [Synth 8-6157] synthesizing module 'RVX_MODULE_118' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_118.v:29]
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter LOWER_INDEX_TO_UPPER_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter LOWER_INDEX_TO_UPPER_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_MUX__parameterized2' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 5 - type: integer 
+	Parameter LOWER_INDEX_TO_UPPER_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_MUX__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_mux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_118' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/rvx_module_118.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_PLATFORM_CONTROLLER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/peripheral/platform_controller/src/ervp_platform_controller.v:26]
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_DEFAULT_SNIM' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_default_snim.v:28]
+	Parameter NODE_ID bound to: 7 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter USE_JTAG_INTERFACE bound to: 1 - type: integer 
+	Parameter USE_SW_INTERFACE bound to: 1 - type: integer 
+	Parameter NOC_CONTROLLER_BASEADDR bound to: -1073741824 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_06' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_06.v:33]
+	Parameter MUNOC_GPARA_01 bound to: 7 - type: integer 
+	Parameter MUNOC_GPARA_09 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_11 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_03 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_00 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_05 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_06 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_10 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_07 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_08 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_04 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_13 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_02 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_14 bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_21' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_21.v:31]
+	Parameter MUNOC_GPARA_3 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 8 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_34' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_34.v:29]
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_34.v:163]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_34.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'MUNOC_MODULE_34' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_34.v:29]
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_46' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_46.v:25]
+	Parameter MUNOC_GPARA_1 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_ASYNCH_FIFO' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_asynch_fifo.v:23]
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SYNCHRONIZER__parameterized3' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+	Parameter BW_DATA bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SYNCHRONIZER__parameterized3' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_ASYNCH_FIFO' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_asynch_fifo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ERVP_COUNTER_WITH_ONEHOT_ENCODING__parameterized1' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter_with_onehot_encoding.v:21]
+	Parameter COUNT_LENGTH bound to: 1 - type: integer 
+	Parameter UP bound to: 0 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_COUNTER_WITH_ONEHOT_ENCODING__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_counter_with_onehot_encoding.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MUNOC_MODULE_46' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_46.v:25]
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_46__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_46.v:25]
+	Parameter MUNOC_GPARA_1 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_ASYNCH_FIFO__parameterized0' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_asynch_fifo.v:23]
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ERVP_SYNCHRONIZER__parameterized4' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+	Parameter BW_DATA bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_SYNCHRONIZER__parameterized4' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_synchronizer.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_ASYNCH_FIFO__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/memory/ervp_asynch_fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUNOC_MODULE_46__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_46.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'MUNOC_MODULE_21' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_21.v:31]
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_35' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:32]
+	Parameter MUNOC_GPARA_3 bound to: 7 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_7 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MUNOC_MODULE_40' [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_40.v:31]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_40.v:149]
+	Parameter BW_DATA bound to: 11 - type: integer 
+	Parameter BW_SHIFT_AMOUNT bound to: 3 - type: integer 
+	Parameter SIGNED_AMOUNT bound to: 0 - type: integer 
+	Parameter PLUS_TO_LEFT bound to: 1 - type: integer 
+	Parameter ARITHMETIC_SHIFT bound to: 0 - type: integer 
+	Parameter CIRCULAR_SHIFT bound to: 0 - type: integer 
+	Parameter LSB_FILL_VALUE bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 11 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_062' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_062.v:24]
+	Parameter RVX_GPARA_0 bound to: 11 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_062__parameterized0' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_062.v:24]
+	Parameter RVX_GPARA_0 bound to: 11 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_062__parameterized1' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_062.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ERVP_BARREL_SHIFTER' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/external/ervp_barrel_shifter.v:23]
+	Parameter RVX_GPARA_1 bound to: 3 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 1 - type: integer 
+	Parameter SIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_070' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_070.v:24]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_SHIFT_AMOUNT bound to: 3 - type: integer 
+	Parameter SIGNED_AMOUNT bound to: 0 - type: integer 
+	Parameter PLUS_TO_LEFT bound to: 1 - type: integer 
+	Parameter ARITHMETIC_SHIFT bound to: 0 - type: integer 
+	Parameter LSB_FILL_VALUE bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_062__parameterized2' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_062.v:24]
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RVX_MODULE_062__parameterized3' (0#1) [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/etc/rvx_module_062.v:24]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 0 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_SHIFT_AMOUNT bound to: 3 - type: integer 
+	Parameter SIGNED_AMOUNT bound to: 1 - type: integer 
+	Parameter PLUS_TO_LEFT bound to: 1 - type: integer 
+	Parameter ARITHMETIC_SHIFT bound to: 0 - type: integer 
+	Parameter CIRCULAR_SHIFT bound to: 0 - type: integer 
+	Parameter LSB_FILL_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:305]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:322]
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:240]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:240]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:240]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:240]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 16 - type: integer 
+	Parameter BW_SHIFT_AMOUNT bound to: 4 - type: integer 
+	Parameter SIGNED_AMOUNT bound to: 0 - type: integer 
+	Parameter PLUS_TO_LEFT bound to: 1 - type: integer 
+	Parameter ARITHMETIC_SHIFT bound to: 0 - type: integer 
+	Parameter CIRCULAR_SHIFT bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 16 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 16 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 16 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 16 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 8 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_29.v:379]
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter BW_SHIFT_AMOUNT bound to: 4 - type: integer 
+	Parameter SIGNED_AMOUNT bound to: 0 - type: integer 
+	Parameter PLUS_TO_LEFT bound to: 1 - type: integer 
+	Parameter ARITHMETIC_SHIFT bound to: 0 - type: integer 
+	Parameter CIRCULAR_SHIFT bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 4 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 8 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 0 - type: integer 
+	Parameter BW_DATA bound to: 15 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 15 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 18 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 18 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 9 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_27.v:145]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_27.v:166]
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 7 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+	Parameter COUNT_LENGTH bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:212]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:260]
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:297]
+	Parameter BW_AXI_TID bound to: 6 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_ADDR bound to: 32 - type: integer 
+	Parameter BW_AXI_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 6 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 6 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter NUM_CANDIDATE bound to: 2 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 42 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 2 - type: integer 
+	Parameter BW_REGISTER bound to: 3 - type: integer 
+	Parameter RESET_NUMBER bound to: 0 - type: integer 
+	Parameter COUNT_LENGTH bound to: 3 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 42 - type: integer 
+	Parameter NUM_DATA bound to: 3 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 6 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 7 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/amba/rvx_module_111.v:106]
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 6 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 6 - type: integer 
+	Parameter BW_LPI_QPARCEL bound to: 82 - type: integer 
+	Parameter BW_LPI_YPARCEL bound to: 35 - type: integer 
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 2 - type: integer 
+	Parameter BW_COUNTER bound to: 3 - type: integer 
+	Parameter BW_COUNT_AMOUNT bound to: 2 - type: integer 
+	Parameter UPPER_LIMIT_NUMBER bound to: 4 - type: integer 
+	Parameter LOWER_LIMIT_NUMBER bound to: 0 - type: integer 
+	Parameter BW_COUNTER bound to: 3 - type: integer 
+	Parameter BW_COUNT_AMOUNT bound to: 2 - type: integer 
+	Parameter RESET_NUMBER bound to: 4 - type: integer 
+	Parameter UPPER_LIMIT_NUMBER bound to: 4 - type: integer 
+	Parameter LOWER_LIMIT_NUMBER bound to: 0 - type: integer 
+	Parameter BW_COUNTER bound to: 2 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 36 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 36 - type: integer 
+	Parameter NUM_DATA bound to: 3 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/lpi/rvx_module_017.v:145]
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter NOC_CONTROLLER_BASEADDR bound to: -1073741824 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_07.v:164]
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_07.v:248]
+	Parameter NAME bound to: i_main_core_inst - type: string 
+	Parameter NODE_ID bound to: 1 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_MASTER_TID bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_20.v:352]
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_REGISTER bound to: 4 - type: integer 
+	Parameter RESET_NUMBER bound to: 0 - type: integer 
+	Parameter COUNT_LENGTH bound to: 4 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_20.v:430]
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter CHECK_WID bound to: 0 - type: integer 
+	Parameter BW_DATA bound to: 49 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 49 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 34 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 34 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter CHECK_WID bound to: 0 - type: integer 
+	Parameter BW_AXI_ADDR bound to: 32 - type: integer 
+	Parameter BW_AXI_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 4 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter BW_DATA bound to: 40 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 40 - type: integer 
+	Parameter NUM_DATA bound to: 3 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 4 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 5 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 4 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 4 - type: integer 
+	Parameter BW_LPI_QPARCEL bound to: 82 - type: integer 
+	Parameter BW_LPI_YPARCEL bound to: 35 - type: integer 
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/lib_rtl/src/lpi/rvx_module_017.v:145]
+	Parameter MUNOC_GPARA_0 bound to: 49 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 49 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 49 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 49 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 37 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 37 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 37 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:224]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:256]
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:323]
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:353]
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+	Parameter BW_COUNTER bound to: 4 - type: integer 
+	Parameter BW_COUNT_AMOUNT bound to: 2 - type: integer 
+	Parameter UNSIGNED bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 8 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 8 - type: integer 
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter NUM_DATA bound to: 8 - type: integer 
+	Parameter COUNT_LENGTH bound to: 1 - type: integer 
+	Parameter UP bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_43.v:138]
+	Parameter NAME bound to: i_main_core_data - type: string 
+	Parameter NODE_ID bound to: 0 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_MASTER_TID bound to: 4 - type: integer 
+	Parameter LOCAL_ENABLE bound to: 1 - type: integer 
+	Parameter LOCAL_UPPER_ADDR bound to: 4'b1111 
+	Parameter MUNOC_GPARA_6 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 4'b1111 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_20.v:352]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_20.v:430]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_20.v:529]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_20.v:560]
+	Parameter MUNOC_GPARA_4 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:224]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:323]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:353]
+	Parameter MUNOC_GPARA_3 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_43.v:138]
+	Parameter NAME bound to: platform_controller_master - type: string 
+	Parameter NODE_ID bound to: 2 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 41 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 41 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 41 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 3 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 33 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 33 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 33 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_39.v:353]
+	Parameter BW_COUNTER bound to: 8 - type: integer 
+	Parameter COUNT_AMOUNT bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:224]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:323]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_02.v:353]
+	Parameter MUNOC_GPARA_1 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+	Parameter BW_DATA bound to: 57 - type: integer 
+	Parameter DEPTH bound to: 6 - type: integer 
+	Parameter BW_REGISTER bound to: 6 - type: integer 
+	Parameter RESET_NUMBER bound to: 0 - type: integer 
+	Parameter COUNT_LENGTH bound to: 6 - type: integer 
+	Parameter CIRCULAR bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 57 - type: integer 
+	Parameter NUM_DATA bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 35 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_43.v:138]
+	Parameter NAME bound to: eMamba_IP_slave - type: string 
+	Parameter NODE_ID bound to: 2 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_SLAVE_TID bound to: 1 - type: integer 
+	Parameter NAME bound to: eMamba_IP_slave - type: string 
+	Parameter NODE_ID bound to: 2 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_SLAVE_TID bound to: 1 - type: integer 
+	Parameter SUPPORTED_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter PARTIAL_READ_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_AXIAR_BUFFER bound to: 4 - type: integer 
+	Parameter NUM_AXIAW_BUFFER bound to: 2 - type: integer 
+	Parameter NUM_AXIW_BUFFER bound to: 4 - type: integer 
+	Parameter NUM_AXIR_BUFFER bound to: 4 - type: integer 
+	Parameter NUM_AXIB_BUFFER bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_08 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_10 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_14 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_05 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_12 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_02 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_09 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_03 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_04 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_13 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_07 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_11 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_00 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_01 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_06 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 8 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 8 - type: integer 
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter NUM_DATA bound to: 8 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_7 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_40.v:149]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:305]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:322]
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 8 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 18 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 18 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_25.v:142]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_25.v:163]
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:212]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:260]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:297]
+	Parameter NAME bound to: i_system_sram_no_name - type: string 
+	Parameter NODE_ID bound to: 4 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_SLAVE_TID bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_08 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_10 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_14 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_05 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_12 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_02 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_09 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_03 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_04 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_13 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_07 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_11 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_00 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_01 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_06 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_7 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:305]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:322]
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 4 - type: integer 
+	Parameter BW_DATA bound to: 9 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 9 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_25.v:142]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_25.v:163]
+	Parameter MUNOC_GPARA_0 bound to: 4 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:212]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:260]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:297]
+	Parameter NAME bound to: common_peri_group_no_name - type: string 
+	Parameter NODE_ID bound to: 0 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_08 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_10 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_14 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_05 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_12 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_02 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_09 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_03 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_04 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_13 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_07 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_11 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_00 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_01 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 8 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 55 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_7 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:305]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:322]
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 9 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter WRITE_READY_SIZE bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 9 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_25.v:142]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_25.v:163]
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 6 - type: integer 
+	Parameter NUM_DATA bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:212]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:260]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:297]
+	Parameter MUNOC_GPARA_2 bound to: common_peri_group_no_name - type: string 
+	Parameter MUNOC_GPARA_1 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 8 - type: integer 
+	Parameter BW_DATA bound to: 8 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter BW_SELECT bound to: 2 - type: integer 
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter NUM_DATA bound to: 4 - type: integer 
+	Parameter BW_SELECT bound to: 2 - type: integer 
+	Parameter NAME bound to: external_peri_group_no_name - type: string 
+	Parameter NODE_ID bound to: 3 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_08 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_10 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_14 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_05 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_12 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_02 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_09 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_03 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_04 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_13 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_07 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_11 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_00 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_01 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_7 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:305]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_35.v:322]
+	Parameter MUNOC_GPARA_0 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:212]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sanghun/RVX/rvx-tutorials/rvx_hwlib/munoc/src/munoc_module_00.v:232]
+INFO: [Common 17-14] Message 'Synth 8-155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter MUNOC_GPARA_2 bound to: external_peri_group_no_name - type: string 
+	Parameter MUNOC_GPARA_1 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 6 - type: integer 
+	Parameter NAME bound to: platform_controller_no_name - type: string 
+	Parameter NODE_ID bound to: 5 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter BW_PLATFORM_ADDR bound to: 32 - type: integer 
+	Parameter BW_NODE_DATA bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_08 bound to: 5 - type: integer 
+	Parameter MUNOC_GPARA_10 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_14 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_05 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_12 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_02 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_09 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_03 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_04 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_13 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_07 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_11 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_00 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_01 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 5 - type: integer 
+	Parameter MUNOC_GPARA_6 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_7 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 5 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_5 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: platform_controller_no_name - type: string 
+	Parameter MUNOC_GPARA_1 bound to: 5 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 32 - type: integer 
+	Parameter MUNOC_GPARA_4 bound to: 6 - type: integer 
+	Parameter ROUTER_ID bound to: 0 - type: integer 
+	Parameter BW_FNI_PHIT bound to: 55 - type: integer 
+	Parameter BW_BNI_PHIT bound to: 35 - type: integer 
+	Parameter NUM_MASTER bound to: 3 - type: integer 
+	Parameter NUM_SLAVE bound to: 6 - type: integer 
+	Parameter NETWORK_TYPE bound to: 1 - type: integer 
+	Parameter ROUTER_ID bound to: 0 - type: integer 
+	Parameter BW_PHIT bound to: 55 - type: integer 
+	Parameter NUM_INPUT bound to: 3 - type: integer 
+	Parameter NUM_OUTPUT bound to: 6 - type: integer 
+	Parameter ARBITRATION_TYPE bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 6 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 57 - type: integer 
+	Parameter NETWORK_TYPE bound to: 1 - type: integer 
+	Parameter ROUTER_ID bound to: 0 - type: integer 
+	Parameter BW_NODE_ID bound to: 3 - type: integer 
+	Parameter NUM_OUTPUT bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 1 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 55 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 3 - type: integer 
+	Parameter BW_DATA bound to: 58 - type: integer 
+	Parameter NUM_DATA bound to: 3 - type: integer 
+	Parameter NETWORK_TYPE bound to: 2 - type: integer 
+	Parameter ROUTER_ID bound to: 0 - type: integer 
+	Parameter BW_PHIT bound to: 35 - type: integer 
+	Parameter NUM_INPUT bound to: 6 - type: integer 
+	Parameter NUM_OUTPUT bound to: 3 - type: integer 
+	Parameter ARBITRATION_TYPE bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 0 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 3 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 37 - type: integer 
+	Parameter NETWORK_TYPE bound to: 2 - type: integer 
+	Parameter ROUTER_ID bound to: 0 - type: integer 
+	Parameter BW_NODE_ID bound to: 2 - type: integer 
+	Parameter NUM_OUTPUT bound to: 3 - type: integer 
+	Parameter MUNOC_GPARA_2 bound to: 2 - type: integer 
+	Parameter MUNOC_GPARA_3 bound to: 35 - type: integer 
+	Parameter MUNOC_GPARA_0 bound to: 6 - type: integer 
+	Parameter MUNOC_GPARA_1 bound to: 2 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 6 - type: integer 
+	Parameter BW_DATA bound to: 38 - type: integer 
+	Parameter NUM_DATA bound to: 6 - type: integer 
+	Parameter DEPTH bound to: 32768 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter BW_INDEX bound to: 15 - type: integer 
+	Parameter USE_SINGLE_INDEX bound to: 1 - type: integer 
+	Parameter USE_SUBWORD_ENABLE bound to: 1 - type: integer 
+	Parameter BW_SUBWORD bound to: 8 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_AXI_TID bound to: 6 - type: integer 
+	Parameter BASEADDR bound to: 0 - type: integer 
+	Parameter CELL_SIZE bound to: 131072 - type: integer 
+	Parameter CELL_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_CELL bound to: 1 - type: integer 
+	Parameter RVX_GPARA_3 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_4 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_6 bound to: 6 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter RVX_GPARA_5 bound to: 0 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 15 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 1 - type: integer 
+	Parameter BW_ADDR bound to: 32 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 6 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter BASEADDR bound to: 0 - type: integer 
+	Parameter BW_CELL_INDEX bound to: 15 - type: integer 
+	Parameter CELL_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_CELL bound to: 1 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_3 bound to: 32 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 6 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 0 - type: integer 
+	Parameter RVX_GPARA_4 bound to: 15 - type: integer 
+	Parameter RVX_GPARA_5 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 1 - type: integer 
+	Parameter RVX_GPARA_0 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_1 bound to: 32 - type: integer 
+	Parameter BW_LPI_BURDEN bound to: 6 - type: integer 
+	Parameter MEMORY_OPERATION_TYPE bound to: 3 - type: integer 
+	Parameter RVX_GPARA_4 bound to: 0 - type: integer 
+	Parameter RVX_GPARA_5 bound to: 15 - type: integer 
+	Parameter RVX_GPARA_2 bound to: 32 - type: integer 
+	Parameter RVX_GPARA_3 bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 4 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 1 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter BW_DATA bound to: 32 - type: integer 
+	Parameter NUM_DATA bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_CHANNEL bound to: 5 - type: integer 
+	Parameter NUM_HEIGHT bound to: 8 - type: integer 
+	Parameter NUM_WIDTH bound to: 8 - type: integer 
+	Parameter PATCH1 bound to: 2 - type: integer 
+	Parameter PATCH2 bound to: 2 - type: integer 
+	Parameter NUM_SEQLEN bound to: 16 - type: integer 
+	Parameter NUM_DIM bound to: 20 - type: integer 
+	Parameter NUM_ED bound to: 40 - type: integer 
+	Parameter NUM_N bound to: 8 - type: integer 
+	Parameter NUM_DELTA bound to: 32 - type: integer 
+	Parameter NUM_DBC bound to: 48 - type: integer 
+	Parameter NUM_CLASS bound to: 57 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_CHANNEL bound to: 5 - type: integer 
+	Parameter NUM_HEIGHT bound to: 8 - type: integer 
+	Parameter NUM_WIDTH bound to: 8 - type: integer 
+	Parameter PATCH1 bound to: 2 - type: integer 
+	Parameter PATCH2 bound to: 2 - type: integer 
+	Parameter NUM_SEQLEN bound to: 16 - type: integer 
+	Parameter NUM_DIM bound to: 20 - type: integer 
+	Parameter NUM_ED bound to: 40 - type: integer 
+	Parameter NUM_N bound to: 8 - type: integer 
+	Parameter NUM_DELTA bound to: 32 - type: integer 
+	Parameter NUM_DBC bound to: 48 - type: integer 
+	Parameter NUM_CLASS bound to: 57 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_CHANNEL bound to: 5 - type: integer 
+	Parameter NUM_HEIGHT bound to: 8 - type: integer 
+	Parameter NUM_WIDTH bound to: 8 - type: integer 
+	Parameter PATCH1 bound to: 2 - type: integer 
+	Parameter PATCH2 bound to: 2 - type: integer 
+	Parameter NUM_SEQLEN bound to: 16 - type: integer 
+	Parameter NUM_DIM bound to: 20 - type: integer 
+	Parameter NUM_SCALE_DIN bound to: 3 - type: integer 
+	Parameter NUM_SCALE_WEIGHT bound to: 7 - type: integer 
+	Parameter NUM_SCALE_BIAS bound to: 8 - type: integer 
+	Parameter NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter DEBUG_SWITCH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_CHANNEL bound to: 5 - type: integer 
+	Parameter NUM_HEIGHT bound to: 8 - type: integer 
+	Parameter NUM_WIDTH bound to: 8 - type: integer 
+	Parameter PATCH1 bound to: 2 - type: integer 
+	Parameter PATCH2 bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_SEQLEN bound to: 16 - type: integer 
+	Parameter NUM_DIM bound to: 20 - type: integer 
+	Parameter NUM_SCALE_DIN bound to: 3 - type: integer 
+	Parameter NUM_SCALE_WEIGHT bound to: 7 - type: integer 
+	Parameter NUM_SCALE_BIAS bound to: 8 - type: integer 
+	Parameter NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_SCALE_DIN bound to: 3 - type: integer 
+	Parameter NUM_SCALE_WEIGHT bound to: 7 - type: integer 
+	Parameter NUM_SCALE_BIAS bound to: 8 - type: integer 
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_A' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7023] instance 'CLA_A' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:76]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_B' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7023] instance 'CLA_B' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_B' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7023] instance 'CLA_B' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_B' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7023] instance 'CLA_B' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_B' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7023] instance 'CLA_B' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_B' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+WARNING: [Synth 8-7023] instance 'CLA_B' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:86]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_SHIFT bound to: 2 - type: integer 
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_C0' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:97]
+WARNING: [Synth 8-7023] instance 'CLA_C0' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:97]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_C1' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:105]
+WARNING: [Synth 8-7023] instance 'CLA_C1' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:105]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_C2' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:113]
+WARNING: [Synth 8-7023] instance 'CLA_C2' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:113]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_D' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:122]
+WARNING: [Synth 8-7023] instance 'CLA_D' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:122]
+WARNING: [Synth 8-7071] port 'carryOut' of module 'CLA_32' is unconnected for instance 'CLA_E' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:131]
+WARNING: [Synth 8-7023] instance 'CLA_E' of module 'CLA_32' has 5 connections declared, but only 4 given [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/matMult_20.sv:131]
+	Parameter DATA_WIDTH bound to: 21 - type: integer 
+	Parameter NUM_SHIFT bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_SEQLEN bound to: 16 - type: integer 
+	Parameter NUM_DIM_1 bound to: 20 - type: integer 
+	Parameter NUM_DIM_2 bound to: 40 - type: integer 
+	Parameter LNORM_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter LNORM_NUM_SCALE_WEIGHT bound to: 7 - type: integer 
+	Parameter LNORM_NUM_SCALE_BIAS bound to: 7 - type: integer 
+	Parameter LNORM_NUM_SCALE_DOUT bound to: 6 - type: integer 
+	Parameter LINEX_X1_NUM_SCALE_DIN bound to: 6 - type: integer 
+	Parameter LINEX_X1_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter LINEX_X1_NUM_SCALE_BIAS bound to: 8 - type: integer 
+	Parameter LINEX_X1_NUM_SCALE_DOUT bound to: 6 - type: integer 
+	Parameter LINEX_Z1_NUM_SCALE_DIN bound to: 6 - type: integer 
+	Parameter LINEX_Z1_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter LINEX_Z1_NUM_SCALE_BIAS bound to: 8 - type: integer 
+	Parameter LINEX_Z1_NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter SILU_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter SILU_NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter CONV1D_NUM_SCALE_DIN bound to: 6 - type: integer 
+	Parameter CONV1D_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter CONV1D_NUM_SCALE_BIAS bound to: 9 - type: integer 
+	Parameter CONV1D_NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DBC_DELTA_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DBC_DELTA_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter SSM_LINEX_DBC_DELTA_NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DBC_B_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DBC_B_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter SSM_LINEX_DBC_B_NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DBC_C_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DBC_C_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter SSM_LINEX_DBC_C_NUM_SCALE_DOUT bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DELTA_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter SSM_LINEX_DELTA_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter SSM_LINEX_DELTA_NUM_SCALE_BIAS bound to: 8 - type: integer 
+	Parameter SSM_LINEX_DELTA_NUM_SCALE_DOUT bound to: 4 - type: integer 
+	Parameter SSM_DIMEX_DELTA_A_NUM_SCALE_DIN_1 bound to: 4 - type: integer 
+	Parameter SSM_DIMEX_DELTA_A_NUM_SCALE_DIN_2 bound to: 3 - type: integer 
+	Parameter SSM_DIMEX_DELTA_A_NUM_SCALE_DOUT bound to: 7 - type: integer 
+	Parameter SSM_DIMEX_DELTA_B_NUM_SCALE_DIN_1 bound to: 4 - type: integer 
+	Parameter SSM_DIMEX_DELTA_B_NUM_SCALE_DIN_2 bound to: 5 - type: integer 
+	Parameter SSM_DIMEX_DELTA_B_NUM_SCALE_DOUT bound to: 3 - type: integer 
+	Parameter SSM_NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter SSM_NUM_SCALE_DELTA_A bound to: 7 - type: integer 
+	Parameter SSM_NUM_SCALE_DELTA_B bound to: 3 - type: integer 
+	Parameter SSM_NUM_SCALE_C bound to: 5 - type: integer 
+	Parameter SSM_NUM_SCALE_D bound to: 6 - type: integer 
+	Parameter SSM_NUM_SCALE_DOUT bound to: 1 - type: integer 
+	Parameter EW_PROD_NUM_SCALE_DIN_1 bound to: 1 - type: integer 
+	Parameter EW_PROD_NUM_SCALE_DIN_2 bound to: 5 - type: integer 
+	Parameter EW_PROD_NUM_SCALE_DOUT bound to: 2 - type: integer 
+	Parameter LINCONT_NUM_SCALE_DIN bound to: 2 - type: integer 
+	Parameter LINCONT_NUM_SCALE_WEIGHT bound to: 8 - type: integer 
+	Parameter LINCONT_NUM_SCALE_BIAS bound to: 9 - type: integer 
+	Parameter LINCONT_NUM_SCALE_DOUT bound to: 3 - type: integer 
+	Parameter EW_ADD_NUM_SCALE_DIN_1 bound to: 3 - type: integer 
+	Parameter EW_ADD_NUM_SCALE_DIN_2 bound to: 5 - type: integer 
+	Parameter EW_ADD_NUM_SCALE_DOUT bound to: 3 - type: integer 
+	Parameter MAMBA_ID bound to: 0 - type: integer 
+	Parameter DEBUG_SWITCH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_SEQLEN bound to: 16 - type: integer 
+	Parameter NUM_DIM bound to: 20 - type: integer 
+	Parameter NUM_SCALE_DIN bound to: 5 - type: integer 
+	Parameter NUM_SCALE_WEIGHT bound to: 7 - type: integer 
+	Parameter NUM_SCALE_BIAS bound to: 7 - type: integer 
+	Parameter NUM_SCALE_DOUT bound to: 6 - type: integer 
+	Parameter LAYER_ID bound to: 0 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_SHIFT bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_WIDTH_DIN bound to: 13 - type: integer 
+	Parameter NUM_DIM bound to: 20 - type: integer 
+	Parameter NUM_LSH_DIN bound to: 5 - type: integer 
+	Parameter NUM_SCALE_WEIGHT bound to: 7 - type: integer 
+	Parameter NUM_SCALE_BIAS bound to: 7 - type: integer 
+ERROR: [Synth 8-439] module 'int8_divider' not found [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/LightNorm_compute.sv:93]
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000010100 
+ERROR: [Synth 8-6156] failed synthesizing module 'LightNorm_compute' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/LightNorm_compute.sv:23]
+ERROR: [Synth 8-196] conditional expression could not be resolved to a constant [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/LightNorm.sv:145]
+ERROR: [Synth 8-6156] failed synthesizing module 'LightNorm' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/LightNorm.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'MAMBA' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/MAMBA.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'eMamba' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/eMamba.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'eMamba_IP' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/user/rtl/src/eMamba_IP.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'TIP_EMAMBA_V1' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/arch/rtl/src/tip_emamba_v1.v:26]
+ERROR: [Synth 8-6156] failed synthesizing module 'TIP_EMAMBA_V1_FPGA' [/home/sanghun/RVX/rvx-tutorials/platform/tip_emamba_v1/imp_genesys2-eb_2026-07-03/src/tip_emamba_v1_fpga.v:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2566.414 ; gain = 697.574 ; free physical = 688010 ; free virtual = 770890
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+395 Infos, 50 Warnings, 0 Critical Warnings and 10 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 11:19:19 2026...

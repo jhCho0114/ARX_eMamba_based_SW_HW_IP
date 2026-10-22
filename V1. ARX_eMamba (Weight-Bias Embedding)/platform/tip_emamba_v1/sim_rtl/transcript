@@ -1,0 +1,2 @@
+# ./vsim.wlf opened as dataset "dataset"
+add wave dataset:/TIP_EMAMBA_V1_SIM/i_platform/my_emamba_ip/*
