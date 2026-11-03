@@ -1,0 +1,4 @@
+*.dcp
+**/imp_result/*_FPGA.v
+*.cache/
+.tmpCRC/

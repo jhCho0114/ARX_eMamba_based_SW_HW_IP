@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX8
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0139131B    Oct 26 16:41:13 2026    /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p.bit

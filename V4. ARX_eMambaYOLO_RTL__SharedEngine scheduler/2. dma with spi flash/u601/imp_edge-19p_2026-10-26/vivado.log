@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct 26 17:57:54 2026
+# Process ID: 3253550
+# Current directory: /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26
+# Command line: vivado -mode batch -source /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_devkit/env/xilinx/program_fpga_flash.tcl
+# Log file: /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/vivado.log
+# Journal file: /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/vivado.jou
+# Running On        :Venus
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD EPYC 9754 128-Core Processor
+# CPU Frequency     :3094.994 MHz
+# CPU Physical cores:128
+# CPU Logical cores :256
+# Host memory       :810823 MB
+# Swap memory       :24576 MB
+# Total Virtual     :835400 MB
+# Available Virtual :755799 MB
+#-----------------------------------------------------------
+source /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_devkit/env/xilinx/program_fpga_flash.tcl
+# set define_list {}
+# source ./set_path.tcl
+## set RVX_ENV /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_devkit/env
+## set PLATFORM_DIR /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601
+## set FPGA_NAME edge-19p
+## set FPGA_DEPENDENT_DIR /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_install/mini_git/imp_class_info/edge-19p
+## set RVX_HWLIB_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_hwlib
+## set RVX_SPECIAL_IP_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_special_ip
+## set MUNOC_HW_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_hwlib/munoc
+## set DCA_HW_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_special_ip/dca
+# source ./set_fpga.tcl
+## set FPGA_PART xcku19p-ffvj1760-3-e
+## set FLASH_INTERFACE_TYPE spix8
+## lappend define_list FLASH_BASE_ADDR=32'h3e40000
+# source ./set_design.tcl
+## set FPGA_NAME edge-19p
+## set GENERATED_TOP_MODULE U601_FPGA
+## set USER_TOP_FILE ${PLATFORM_DIR}/user/fpga/${FPGA_NAME}/set_top_module.tcl
+## set USER_COMMON_TOP_FILE ${PLATFORM_DIR}/user/fpga/common/set_top_module.tcl
+## if {[file exist ${USER_TOP_FILE}]} {
+## 	source ${USER_TOP_FILE}
+## } elseif {[file exist ${USER_COMMON_TOP_FILE}]} {
+## 	source ${USER_COMMON_TOP_FILE}
+## } else {
+## 	set TOP_MODULE ${GENERATED_TOP_MODULE}
+## }
+## set PROJECT_NAME [string tolower ${TOP_MODULE}]
+## set BIT_FILE_NAME ${PROJECT_NAME}.${FPGA_NAME}
+## set IMP_MODE release
+# source ${RVX_ENV}/xilinx/__set_env.tcl
+## source ${RVX_ENV}/xilinx/util.tcl
+### proc glob_wo_error { pattern } {
+### 	if [ catch { set temp [glob $pattern] } msg ] {
+### 		set result {}
+### 	} else {
+### 		set result $temp
+### 	}
+### 	return $result
+### }
+### proc concat_file_list { conv_list pattern} {
+### 	return [concat $conv_list [glob_wo_error $pattern]]
+### }
+### proc touch { path } {
+### 	if {[file exist $path]==0} {
+### 		close [open $path w]
+### 	}
+### }
+## set ENV_DIR ${RVX_ENV}/xilinx
+## set CURRENT_DIR [pwd]
+## set IMP_RESULT_DIR ${CURRENT_DIR}/imp_result
+## set ILA_RESULT_DIR ${CURRENT_DIR}/ila
+## set SYN_ENV_FILE ./set_fpga_syn_env.tcl
+## set SYN_COMMON_LIB_ENV_FILE ${RVX_HWLIB_HOME}/lib_fpga/env/set_syn_env.tcl
+## set SYN_FPGA_SRC_FILE ${FPGA_DEPENDENT_DIR}/env/set_fpga_src.tcl
+## set IMP_ENV_FILE ./set_fpga_imp_env.tcl
+## set IMP_FPGA_XDC_FILE ${FPGA_DEPENDENT_DIR}/env/set_fpga_xdc.tcl
+## set IMP_FPGA_PINMAP_FILE ${FPGA_DEPENDENT_DIR}/env/set_fpga_pinmap.tcl
+## set TOOL_OPTION_FILE ./set_tool_option.tcl
+## set MANUAL_SYN_IMPDIR_FILE ./syn_manually.tcl
+## set MANUAL_PNR_IMPDIR_FILE ./pnr_manually.tcl
+## set MANUAL_SYN_USER_FILE ${PLATFORM_DIR}/user/fpga/${FPGA_NAME}/syn_manually.tcl
+## set MANUAL_PNR_USER_FILE ${PLATFORM_DIR}/user/fpga/${FPGA_NAME}/pnr_manually.tcl
+# source ./gen_mcs.tcl
+## set define_list {}
+## source ./set_path.tcl
+### set RVX_ENV /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_devkit/env
+### set PLATFORM_DIR /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601
+### set FPGA_NAME edge-19p
+### set FPGA_DEPENDENT_DIR /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_install/mini_git/imp_class_info/edge-19p
+### set RVX_HWLIB_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_hwlib
+### set RVX_SPECIAL_IP_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_special_ip
+### set MUNOC_HW_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_hwlib/munoc
+### set DCA_HW_HOME /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_special_ip/dca
+## source ./set_design.tcl
+### set FPGA_NAME edge-19p
+### set GENERATED_TOP_MODULE U601_FPGA
+### set USER_TOP_FILE ${PLATFORM_DIR}/user/fpga/${FPGA_NAME}/set_top_module.tcl
+### set USER_COMMON_TOP_FILE ${PLATFORM_DIR}/user/fpga/common/set_top_module.tcl
+### if {[file exist ${USER_TOP_FILE}]} {
+### 	source ${USER_TOP_FILE}
+### } elseif {[file exist ${USER_COMMON_TOP_FILE}]} {
+### 	source ${USER_COMMON_TOP_FILE}
+### } else {
+### 	set TOP_MODULE ${GENERATED_TOP_MODULE}
+### }
+### set PROJECT_NAME [string tolower ${TOP_MODULE}]
+### set BIT_FILE_NAME ${PROJECT_NAME}.${FPGA_NAME}
+### set IMP_MODE release
+## source ${RVX_ENV}/xilinx/__set_env.tcl
+### source ${RVX_ENV}/xilinx/util.tcl
+#### proc glob_wo_error { pattern } {
+#### 	if [ catch { set temp [glob $pattern] } msg ] {
+#### 		set result {}
+#### 	} else {
+#### 		set result $temp
+#### 	}
+#### 	return $result
+#### }
+#### proc concat_file_list { conv_list pattern} {
+#### 	return [concat $conv_list [glob_wo_error $pattern]]
+#### }
+#### proc touch { path } {
+#### 	if {[file exist $path]==0} {
+#### 		close [open $path w]
+#### 	}
+#### }
+### set ENV_DIR ${RVX_ENV}/xilinx
+### set CURRENT_DIR [pwd]
+### set IMP_RESULT_DIR ${CURRENT_DIR}/imp_result
+### set ILA_RESULT_DIR ${CURRENT_DIR}/ila
+### set SYN_ENV_FILE ./set_fpga_syn_env.tcl
+### set SYN_COMMON_LIB_ENV_FILE ${RVX_HWLIB_HOME}/lib_fpga/env/set_syn_env.tcl
+### set SYN_FPGA_SRC_FILE ${FPGA_DEPENDENT_DIR}/env/set_fpga_src.tcl
+### set IMP_ENV_FILE ./set_fpga_imp_env.tcl
+### set IMP_FPGA_XDC_FILE ${FPGA_DEPENDENT_DIR}/env/set_fpga_xdc.tcl
+### set IMP_FPGA_PINMAP_FILE ${FPGA_DEPENDENT_DIR}/env/set_fpga_pinmap.tcl
+### set TOOL_OPTION_FILE ./set_tool_option.tcl
+### set MANUAL_SYN_IMPDIR_FILE ./syn_manually.tcl
+### set MANUAL_PNR_IMPDIR_FILE ./pnr_manually.tcl
+### set MANUAL_SYN_USER_FILE ${PLATFORM_DIR}/user/fpga/${FPGA_NAME}/syn_manually.tcl
+### set MANUAL_PNR_USER_FILE ${PLATFORM_DIR}/user/fpga/${FPGA_NAME}/pnr_manually.tcl
+## write_cfgmem -format mcs -interface spix8 -size 64 -loadbit "up 0x0 ${IMP_RESULT_DIR}/${BIT_FILE_NAME}.bit" -file ${IMP_RESULT_DIR}/${BIT_FILE_NAME}.mcs -force
+Command: write_cfgmem -format mcs -interface spix8 -size 64 -loadbit {up 0x0 /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p.bit} -file /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p.mcs -force
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p.bit
+Writing file /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p_primary.mcs
+Writing file /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p_secondary.mcs
+Writing log file /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p_primary.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX8
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0139131B    Oct 26 16:41:13 2026    /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p.bit
+Writing log file /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p_secondary.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX8
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0139131B    Oct 26 16:41:13 2026    /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/u601_fpga.edge-19p.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1597.391 ; gain = 166.672 ; free physical = 28217 ; free virtual = 720294
+# open_hw_manager
+open_hw_manager: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1614.492 ; gain = 0.023 ; free physical = 28232 ; free virtual = 720309
+# connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1
+  **** Build date : May 22 2024 at 19:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Apr 27 2024-10:40:49
+    **** Build number : 2024.1.1714182049
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+# current_hw_server [get_hw_servers]
+# disconnect_hw_server
+# connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Apr 27 2024-10:40:49
+    **** Build number : 2024.1.1714182049
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+# current_hw_server [get_hw_servers]
+# open_hw_target [get_hw_targets]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251409020
+# current_hw_device [get_hw_devices]
+# refresh_hw_device -update_hw_probes false
+INFO: [Labtools 27-2302] Device xcku19p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+# source ./set_config_memory.tcl
+## create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] [lindex [get_cfgmem_parts {s25fl512s-spi-x1_x2_x4_x8}] 0]
+# if {[string equal ${FLASH_INTERFACE_TYPE} spix8]} {
+# 	set_property PROGRAM.FILES [list ${IMP_RESULT_DIR}/${BIT_FILE_NAME}_primary.mcs ${IMP_RESULT_DIR}/${BIT_FILE_NAME}_secondary.mcs] [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# } else {
+# 	set_property PROGRAM.FILES [list ${IMP_RESULT_DIR}/${BIT_FILE_NAME}.mcs] [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# }
+# set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+# if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE [current_hw_device]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [current_hw_device]]]]] } {
+# 	create_hw_bitstream -hw_device [current_hw_device] [get_property PROGRAM.HW_CFGMEM_BITFILE [current_hw_device]];
+# 	program_hw_devices [current_hw_device];
+# }
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1638.680 ; gain = 0.000 ; free physical = 28037 ; free virtual = 720211
+# program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [current_hw_device]]
+Performing operation on qspi device 0
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+Performing operation on qspi device 1
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:11:15 . Memory (MB): peak = 1638.680 ; gain = 0.000 ; free physical = 28127 ; free virtual = 720254
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 26 18:09:39 2026...

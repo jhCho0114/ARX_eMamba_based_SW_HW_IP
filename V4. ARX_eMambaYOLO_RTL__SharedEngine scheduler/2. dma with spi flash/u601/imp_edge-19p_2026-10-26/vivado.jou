@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct 26 17:57:54 2026
+# Process ID: 3253550
+# Current directory: /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26
+# Command line: vivado -mode batch -source /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_devkit/env/xilinx/program_fpga_flash.tcl
+# Log file: /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/vivado.log
+# Journal file: /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/vivado.jou
+# Running On        :Venus
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD EPYC 9754 128-Core Processor
+# CPU Frequency     :3094.994 MHz
+# CPU Physical cores:128
+# CPU Logical cores :256
+# Host memory       :810823 MB
+# Swap memory       :24576 MB
+# Total Virtual     :835400 MB
+# Available Virtual :755799 MB
+#-----------------------------------------------------------
+source /home/sanghun/RVX/n2w_etri/npx_downsampler/rvx_devkit/env/xilinx/program_fpga_flash.tcl

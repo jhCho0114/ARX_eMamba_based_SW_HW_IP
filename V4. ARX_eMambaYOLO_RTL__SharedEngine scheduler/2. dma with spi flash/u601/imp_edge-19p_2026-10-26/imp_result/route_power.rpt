@@ -1,0 +1,224 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date             : Mon Oct 26 16:36:08 2026
+| Host             : Venus running 64-bit Ubuntu 22.04.5 LTS
+| Command          : report_power -file /home/sanghun/RVX/n2w_etri/npx_downsampler/platform/u601/imp_edge-19p_2026-10-26/imp_result/route_power.rpt
+| Design           : U601_FPGA
+| Device           : xcku19p-ffvj1760-3-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 4.601        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.686        |
+| Device Static (W)        | 1.915        |
+| Effective TJA (C/W)      | 0.7          |
+| Max Ambient (C)          | 96.6         |
+| Junction Temperature (C) | 28.4         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.613 |       23 |       --- |             --- |
+| CLB Logic                |     0.100 |   425680 |       --- |             --- |
+|   LUT as Logic           |     0.076 |   169479 |    842400 |           20.12 |
+|   LUT as Distributed RAM |     0.015 |    37766 |    190080 |           19.87 |
+|   CARRY8                 |     0.006 |     7946 |    105300 |            7.55 |
+|   Register               |     0.002 |   132606 |   1684800 |            7.87 |
+|   LUT as Shift Register  |     0.002 |      540 |    190080 |            0.28 |
+|   Others                 |    <0.001 |     1742 |       --- |             --- |
+|   BUFG                   |    <0.001 |        9 |        72 |           12.50 |
+|   F7/F8 Muxes            |     0.000 |    35714 |    842400 |            4.24 |
+| Signals                  |     0.127 |   408550 |       --- |             --- |
+| Block RAM                |     0.833 |     1487 |      1728 |           86.05 |
+| URAM                     |     0.286 |      280 |       288 |           97.22 |
+| MMCM                     |     0.214 |        0 |       --- |             --- |
+| PLL                      |     0.121 |        2 |       --- |             --- |
+| DSPs                     |     0.044 |      172 |      1080 |           15.93 |
+| I/O                      |     0.347 |      175 |       540 |           32.41 |
+| Static Power             |     1.915 |          |           |                 |
+| Total                    |     4.601 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint     |       0.900 |     3.111 |       2.226 |      0.885 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.900 |     0.267 |       0.126 |      0.141 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.900 |     0.026 |       0.006 |      0.020 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.604 |       0.183 |      0.421 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.182 |       0.083 |      0.099 |       NA    | Unspecified | NA         |
+| Vcco33     |       3.300 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
+| Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.001 |       0.001 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12     |       1.200 |     0.069 |       0.069 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc     |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| MGTYAVcc   |       0.900 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 0.7                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 0.9                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                               | Domain                                                                                                                                                                                                                               | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| CIS_PCLK                                                                                            | CIS_PCLK                                                                                                                                                                                                                             |            20.0 |
+| HDMI_RX_DCK                                                                                         | HDMI_RX_DCK                                                                                                                                                                                                                          |             6.0 |
+| c0_sys_clk_p                                                                                        | c0_sys_clk_p                                                                                                                                                                                                                         |             3.3 |
+| clk_100000000_xilinx_clock_pll_0                                                                    | i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_100000000_xilinx_clock_pll_0                                                                                                                                                         |            10.0 |
+| clk_150000000_xilinx_clock_pll_0                                                                    | i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_150000000_xilinx_clock_pll_0                                                                                                                                                         |             6.7 |
+| clk_200000000_xilinx_clock_pll_0                                                                    | i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_200000000_xilinx_clock_pll_0                                                                                                                                                         |             5.0 |
+| clk_25000000_xilinx_clock_pll_0                                                                     | i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_25000000_xilinx_clock_pll_0                                                                                                                                                          |            40.0 |
+| clk_300000000_xilinx_clock_pll_0                                                                    | i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_300000000_xilinx_clock_pll_0                                                                                                                                                         |             3.3 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK                                                                                                                                                                   |            50.0 |
+| external_clk_0                                                                                      | external_clk_0                                                                                                                                                                                                                       |            20.0 |
+| external_clk_0                                                                                      | external_clk_0_IBUF_BUFGCE                                                                                                                                                                                                           |            20.0 |
+| i_HDMI_RX_DCK                                                                                       | i_platform/i_rtl/i_edge_video_system/i_video/w_HDMI_RX_DCK                                                                                                                                                                           |             6.0 |
+| mmcm_clkout0                                                                                        | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/mmcm_clkout0                                                                                                                                                   |             6.0 |
+| mmcm_clkout5                                                                                        | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/mmcm_clkout5                                                                                                                                                   |            24.0 |
+| mmcm_clkout6                                                                                        | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/mmcm_clkout6                                                                                                                                                   |            12.0 |
+| pjtag_rclk                                                                                          | pjtag_rtck                                                                                                                                                                                                                           |           100.0 |
+| pll_clk[0]                                                                                          | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/pll_clk[0]                                                                                                                       |             0.7 |
+| pll_clk[0]_DIV                                                                                      | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_CONTROL[0].GEN_I_CONTROL.u_xiphy_control/TX_BIT_CTRL_OUT0[26] |             6.0 |
+| pll_clk[1]                                                                                          | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/pll_clk[1]                                                                                                                       |             0.7 |
+| pll_clk[1]_DIV                                                                                      | i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[4].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_CONTROL[0].GEN_I_CONTROL.u_xiphy_control/TX_BIT_CTRL_OUT0[26] |             6.0 |
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------------+-----------+
+| Name                                        | Power (W) |
++---------------------------------------------+-----------+
+| U601_FPGA                                   |     2.686 |
+|   dbg_hub                                   |     0.002 |
+|     inst                                    |     0.002 |
+|       BSCANID.u_xsdbm_id                    |     0.002 |
+|   i_platform                                |     2.660 |
+|     i_pll0                                  |     0.100 |
+|       i_xilinx_clock_pll_0                  |     0.100 |
+|     i_rtl                                   |     0.305 |
+|       default_slave                         |     0.003 |
+|       external_peri_group                   |     0.003 |
+|       i_edge_video_system                   |     0.127 |
+|       i_florian_000                         |     0.011 |
+|       i_inter_router_fifo00                 |     0.004 |
+|       i_main_core                           |     0.020 |
+|       i_mnim_i_edge_video_system_vdma       |     0.016 |
+|       i_mnim_i_edge_video_system_vim        |     0.004 |
+|       i_mnim_i_edge_video_system_vom        |     0.003 |
+|       i_mnim_i_main_core_data               |     0.004 |
+|       i_mnim_i_main_core_inst               |     0.002 |
+|       i_mnim_platform_controller_master     |     0.002 |
+|       i_snim_common_peri_group_no_name      |     0.004 |
+|       i_snim_eMamba_IP_slave                |     0.009 |
+|       i_snim_external_peri_group_no_name    |     0.006 |
+|       i_snim_i_edge_video_system_vdma_ctrl  |     0.007 |
+|       i_snim_i_edge_video_system_video_ctrl |     0.006 |
+|       i_snim_i_system_ddr_no_name           |     0.011 |
+|       i_snim_i_system_sram_no_name          |     0.012 |
+|       i_snim_input_bram_slave               |     0.008 |
+|       i_snim_output_bram_slave              |     0.009 |
+|       i_snim_platform_controller_no_name    |     0.004 |
+|       i_snim_wb_bram_slave                  |     0.008 |
+|       i_system_router                       |     0.004 |
+|       i_user_router                         |     0.008 |
+|       platform_controller                   |     0.012 |
+|     i_system_ddr                            |     0.673 |
+|       i_ddr4_ctrl_axi128                    |     0.673 |
+|     i_system_sram                           |     0.111 |
+|       generate_cell[0].i_cell               |     0.107 |
+|       i_controller                          |     0.004 |
+|     my_emambayolo_ip                        |     1.393 |
+|       S_AXI                                 |     0.003 |
+|       core                                  |     1.391 |
+|     u_input_bram                            |     0.019 |
+|       i_controller                          |     0.002 |
+|     u_output_bram                           |     0.040 |
+|       i_controller                          |     0.004 |
+|     u_wb_bram                               |     0.019 |
+|       i_controller                          |     0.001 |
++---------------------------------------------+-----------+
+
+

@@ -1,0 +1,115 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.1
+| Date         : Sun Nov  1 21:18:08 2026
+| Host         : Venus
+| Design       : design_1
+| Device       : xcku19p-ffvj1760-3-E-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 15
+	Number of BUFGCE: 15
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 10 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_150000000
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	initial rect ((0, 0), (4, 8))
+
+Clock 2: i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/u_bufg_divClk_0
+	Clock source type: BUFGCE
+	Clock source region: X0Y4
+	Clock regions with locked loads: X0Y4 X0Y5 
+	initial rect ((0, 4), (4, 8))
+
+Clock 3: external_clk_0_IBUF_BUFGCE
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	Clock regions with locked loads: X0Y0 
+	initial rect ((0, 0), (2, 8))
+
+Clock 4: i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_200000000
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	initial rect ((0, 0), (1, 7))
+
+Clock 5: i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_100000000
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	initial rect ((0, 0), (2, 8))
+
+Clock 6: i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/c0_riu_clk
+	Clock source type: BUFGCE
+	Clock source region: X0Y4
+	Clock regions with locked loads: X0Y4 X0Y5 
+	initial rect ((0, 4), (0, 5))
+
+Clock 7: i_platform/i_rtl/i_edge_video_system/i_video/w_HDMI_RX_DCK
+	Clock source type: BUFGCE
+	Clock source region: X0Y6
+	initial rect ((0, 3), (1, 7))
+
+Clock 8: i_platform/i_rtl/i_edge_video_system/i_video/w_CIS_PCLK
+	Clock source type: BUFGCE
+	Clock source region: X0Y5
+	initial rect ((0, 3), (1, 6))
+
+Clock 9: i_platform/i_rtl/i_edge_video_system/i_video/i_vom/i_HDMI_TX_DCK
+	Clock source type: BUFGCE
+	Clock source region: X0Y5
+	Clock regions with locked loads: X0Y3 
+	initial rect ((0, 3), (0, 6))
+
+Clock 10: i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/dbg_clk
+	Clock source type: BUFGCE
+	Clock source region: X0Y4
+	initial rect ((0, 3), (0, 4))
+
+Clock 11: dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i
+	Clock source type: BUFGCE
+	Clock source region: X0Y3
+	initial rect ((0, 0), (4, 3))
+
+Clock 12: pjtag_rtck_IBUF_BUFG
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	initial rect ((0, 0), (1, 7))
+
+Clock 13: i_platform/i_system_ddr/i_ddr4_ctrl_axi128/inst/u_ddr4_infrastructure/sys_clk_in_bufg
+	Clock source type: BUFGCE
+	Clock source region: X0Y4
+	initial rect ((0, 4), (0, 5))
+
+Clock 14: i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_300000000
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	initial rect ((0, 0), (0, 6))
+
+Clock 15: i_platform/i_pll0/i_xilinx_clock_pll_0/inst/clk_25000000
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	Clock regions with locked loads: X0Y0 
+	initial rect ((0, 0), (0, 0))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+
